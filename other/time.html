@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>下班倒计时</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- <link rel='stylesheet' href='https://fonts.googleapis.cn/css?family=Montserrat:400,700'>
+    <link rel="shortcut icon" href="https://utopiaxc-imgs.oss-cn-beijing.aliyuncs.com/2021/08/28/7d0e0a5f33e5a.ico"> -->
+    <!-- <style>
+        /* general styling */
+        :root {
+            --smaller: .75;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            align-items: center;
+            background: linear-gradient(45deg, #1870ed 0, #f18f88 100%);
+            display: flex;
+            font-family: "Montserrat", "sans-serif";
+        }
+
+        .container {
+            color: #333;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: normal;
+            letter-spacing: .25rem;
+            text-transform: uppercase;
+        }
+
+        li {
+            display: inline-block;
+            font-size: 2em;
+            list-style-type: none;
+            padding: 1em;
+            text-transform: uppercase;
+        }
+
+        li span {
+            display: block;
+            font-size: 6rem;
+        }
+
+        .emoji {
+            display: none;
+            padding: 1rem;
+        }
+
+        .emoji span {
+            font-size: 4rem;
+            padding: 0 .5rem;
+        }
+
+        @media all and (max-width: 768px) {
+            h1 {
+                font-size: calc(1.5rem * var(--smaller));
+            }
+
+            li {
+                font-size: calc(1.125rem * var(--smaller));
+            }
+
+            li span {
+                font-size: calc(3.375rem * var(--smaller));
+            }
+        }
+
+        span,li,h1{
+            color: floralwhite;
+        }
+    </style> -->
+
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+    _paq.push(["setCookieDomain", "*.time.utopiaxc.cn"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//matomo.utopiaxc.cn/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '16']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="headline"></h1>
+        <div id="countdown">
+            <ul>
+                <li><span id="days"></span>天</li>
+                <li><span id="hours"></span>小时</li>
+                <li><span id="minutes"></span>分钟</li>
+                <li><span id="seconds"></span>秒</li>
+            </ul>
+        </div>
+    </div> 
+    <script>
+
+        let holiday
+        let targetTime
+        let nextWorkDate
+        getNextWorkTime()
+        starter()
+        updateTime()
+        setInterval(function () {
+            updateTime()
+        }, 1000)
+
+        function starter() {
+            if (isWorkDay(new Date())) {
+                startTime = new Date()
+                startTime.setHours(9)
+                startTime.setMinutes(0)
+                startTime.setSeconds(0)
+
+                endTime = new Date()
+                endTime.setHours(18)
+                endTime.setMinutes(0)
+                endTime.setSeconds(0)
+
+                nowTime = new Date()
+
+                if (startTime <= nowTime && endTime >= nowTime) {
+                    document.getElementById("headline").innerText = "上班中，距离下班还有"
+                    targetTime = endTime
+                } else {
+                    document.getElementById("headline").innerText = "已下班，距离下次上班还有"
+                    targetTime = nextWorkDate
+                    targetTime.setHours(9)
+                    targetTime.setMinutes(0)
+                    targetTime.setSeconds(0)
+                }
+            } else {
+                document.getElementById("headline").innerText = "现在是" + holiday + "，距离下次上班还有"
+                targetTime = nextWorkDate
+                targetTime.setHours(9)
+                targetTime.setMinutes(0)
+                targetTime.setSeconds(0)
+            }
+
+        }
+
+        function isWorkDay(now) {
+            now.setHours(0)
+            now.setMinutes(0)
+            now.setSeconds(0)
+            now.setMilliseconds(0)
+            let holidays = [
+                { "date": "2022-01-01 00:00:00", "name": "元旦" },
+                { "date": "2022-01-02 00:00:00", "name": "元旦" },
+                { "date": "2022-01-03 00:00:00", "name": "元旦" },
+                { "date": "2022-01-31 00:00:00", "name": "春节" },
+                { "date": "2022-02-01 00:00:00", "name": "春节" },
+                { "date": "2022-02-02 00:00:00", "name": "春节" },
+                { "date": "2022-02-03 00:00:00", "name": "春节" },
+                { "date": "2022-02-04 00:00:00", "name": "春节" },
+                { "date": "2022-02-05 00:00:00", "name": "春节" },
+                { "date": "2022-02-06 00:00:00", "name": "春节" },
+                { "date": "2022-04-03 00:00:00", "name": "清明节" },
+                { "date": "2022-04-05 00:00:00", "name": "清明节" },
+                { "date": "2022-04-06 00:00:00", "name": "清明节" },
+                { "date": "2022-04-30 00:00:00", "name": "劳动节" },
+                { "date": "2022-05-01 00:00:00", "name": "劳动节" },
+                { "date": "2022-05-02 00:00:00", "name": "劳动节" },
+                { "date": "2022-05-03 00:00:00", "name": "劳动节" },
+                { "date": "2022-05-04 00:00:00", "name": "劳动节" },
+                { "date": "2022-06-03 00:00:00", "name": "端午节" },
+                { "date": "2022-06-04 00:00:00", "name": "端午节" },
+                { "date": "2022-06-05 00:00:00", "name": "端午节" },
+                { "date": "2022-09-10 00:00:00", "name": "中秋节" },
+                { "date": "2022-09-11 00:00:00", "name": "中秋节" },
+                { "date": "2022-09-12 00:00:00", "name": "中秋节" },
+                { "date": "2022-10-01 00:00:00", "name": "国庆节" },
+                { "date": "2022-10-02 00:00:00", "name": "国庆节" },
+                { "date": "2022-10-03 00:00:00", "name": "国庆节" },
+                { "date": "2022-10-04 00:00:00", "name": "国庆节" },
+                { "date": "2022-10-05 00:00:00", "name": "国庆节" },
+                { "date": "2022-10-06 00:00:00", "name": "国庆节" },
+                { "date": "2022-10-07 00:00:00", "name": "国庆节" },
+            ]
+
+            let holiday_work = [
+                { "date": "2022-01-29 00:00:00", "name": "春节调休" },
+                { "date": "2022-01-30 00:00:00", "name": "春节调休" },
+                { "date": "2022-04-01 00:00:00", "name": "清明节调休" },
+                { "date": "2022-04-24 00:00:00", "name": "劳动节调休" },
+                { "date": "2022-05-07 00:00:00", "name": "劳动节调休" },
+                { "date": "2022-10-08 00:00:00", "name": "国庆节调休" },
+                { "date": "2022-10-09 00:00:00", "name": "国庆节调休" },
+            ]
+            let flag = true
+            if (now.getDay() === 6) {
+                flag = false
+                holiday = '周六'
+            }
+            if (now.getDay() === 0) {
+                flag = false
+                holiday = '周日'
+            }
+            for (let hol in holidays) {
+                let temp = new Date(holidays[hol].date)
+                if (temp.getTime() === now.getTime()) {
+                    flag = false
+                    holiday = holidays[hol].name
+                    break
+                }
+            }
+            for (let hol in holiday_work) {
+                let temp = new Date(holiday_work[hol].date)
+                if (temp.getTime() === now.getTime()) {
+                    flag = true
+                    holiday = holidays[hol].name
+                    break
+                }
+            }
+            return flag
+        }
+
+        function getNextWorkTime() {
+            date = new Date()
+            for (let i = 0; i < 100; i++) {
+                date.setDate(date.getDate() + 1)
+                if (isWorkDay(date)) {
+                    nextWorkDate = date
+                    return
+                }
+            }
+        }
+
+        function PrefixInteger(num, length) {
+            return (num / Math.pow(10, length)).toFixed(length).substr(2);
+        }
+
+        function updateTime() {
+            let nowTime = new Date()
+            let offsetTime = targetTime.getTime() - nowTime.getTime()
+            offsetTime = parseInt(offsetTime / 1000)
+            let days = parseInt(offsetTime / (24 * 60 * 60))
+            let hours = parseInt(offsetTime % (24 * 60 * 60) / (60 * 60))
+            let minutes = parseInt(offsetTime % (60 * 60) / 60)
+            let seconds = offsetTime % 60
+            if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
+                getNextWorkTime()
+                starter()
+            }
+            document.getElementById('days').innerText = PrefixInteger(days, 2)
+            document.getElementById('hours').innerText = PrefixInteger(hours, 2)
+            document.getElementById('minutes').innerText = PrefixInteger(minutes, 2)
+            document.getElementById('seconds').innerText = PrefixInteger(seconds, 2)
+        }
+    </script>
+ 
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+
+/* 大屏幕（大于等于1200px） */
+@media (min-width: 992px) {
+	
+	#en_div{
+		font-size: 20px;
+		margin-left: 20%;
+		margin-right: 20%;
+		background-color: antiquewhite;
+		padding: 5px;
+		padding-left: 10px;
+	}
+
+
+
+	#en_div_big{
+		background: #090300;
+	}
+	/* #cihui{
+		color:#090300;
+	} */
+
+	body{
+		background: #090300;
+		color: #5B5B5B;
+	}
+}
+
+
+/* 中等屏幕（大于等于992px） */
+@media (min-width: 768px) and (max-width:992px){
+
+	#en_div{
+		font-size: 16px;
+		margin-left: 5px;
+		margin-right: 5px;
+		background-color: antiquewhite;
+		padding: 52px;
+		/* padding-left: 10px; */
+	}
+	
+
+	
+	#en_div_big{
+		background: #090300;
+	}
+	
+	
+	body{
+		background: #090300;
+		color: #5B5B5B;
+	}
+	
+
+}
+
+/* 小屏幕 */
+@media (min-width: 0px) and (max-width:768px) {
+	#en_div{
+		font-size: 16px;
+		margin-left:5px ;
+		margin-right: 5px;
+		background-color: antiquewhite;
+		padding: 5px;
+		/* padding-left: 10px; */
+	}
+	
+	#en_div_big{
+		background: #090300;
+	}
+	
+	
+	body{
+		background: #090300;
+		color: #5B5B5B;
+	}
+}

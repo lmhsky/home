@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Android OS boot</title>
+    <!-- <meta name="keywords" content="Windows 11 23H2,Windows系统,Windows镜像,MSDN,山己几子木">
+    <meta name="description" content="本站提供 Windows 11、Windows 10、Windows 8.1、Windows 8、Windows 7、Windows XP 的 MSDN 镜像资源展示。">
+    <meta name="copyright" content="Copyright (c) 2019 SJJZM.COM All Rights Reserved."> -->
+    <link rel="shortcut icon" type="image/ico" href="https://cdn.sjjzm.com/favicon.ico">
+    <link rel="apple-touch-icon" href="https://cdn.sjjzm.com/favicon.ico">
+    <link rel="Bookmark" href="https://cdn.sjjzm.com/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./android_boot/style.css">
+    <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.sjjzm.com/msdn/js/layer/layer.js"></script>
+    <script type="text/javascript" src="https://cdn.sjjzm.com/common/js/clipboard.min.js"></script>
+    <script type="text/javascript" src="https://cdn.sjjzm.com/msdn/js/common.js"></script>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="side">
+            <div class="logo"></div>
+            <div class="nav">
+                <ul class="list">
+                    <li class="active"><a href="https://msdn.sjjzm.com/">Root ROM</a></li>
+                    <li><a href="https://msdn.sjjzm.com/win11.html">Boot loader/Uboot</a></li>
+                    <li><a href="https://msdn.sjjzm.com/win10.html">Linux kernel</a></li>
+                    <li><a href="https://msdn.sjjzm.com/win81.html">HAL</a></li>
+                    <li><a href="https://msdn.sjjzm.com/win8.html">Android Runtime</a></li>
+                    <li><a href="https://msdn.sjjzm.com/win7.html">Native C/C++ libraries</a></li>
+                    <li><a href="https://msdn.sjjzm.com/winxp.html">Framework</a></li>
+                    <li><a href="https://msdn.sjjzm.com/winxp.html">Application</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="header">
+                <ul class="list">
+                    <li><a href="https://msdn.sjjzm.com/download/hasher" target="_blank">下载Hasher</a></li>
+                    <li><a class="favorite" href="javascript:;" id="addFavorite">收藏本站</a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="menu">
+                    <ul>
+                        <li class="active"><a href="https://msdn.sjjzm.com/win11/23h2.html">23H2</a><i></i></li>
+                        <li><a href="https://msdn.sjjzm.com/win11/22h2.html">22H2</a><i></i></li>
+                        <li><a href="https://msdn.sjjzm.com/win11/21h2.html">21H2</a><i></i></li>
+                        <li><a href="https://msdn.sjjzm.com/win11/first.html">First</a><i></i></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <div class="name">Windows 11 消费者版本 23H2 x64</div>
+                    <div class="tag"><span class="bit">64位</span><span class="lang">中文简体</span><span class="date">2023-10-31</span><span>专业版</span><span>家庭版</span><span>家庭单语言版</span><span>教育版</span><span>专业教育版</span><span>专业工作站版</span></div>
+                    <div class="parm">
+                        <dl><dt>文件名</dt>
+                            <dd>zh-cn_windows_11_consumer_editions_version_23h2_x64_dvd_91207780.iso</dd>
+                        </dl>
+                        <dl><dt>SHA-256</dt>
+                            <dd>86533155b48398556014de1aa03917a4c243686bb1e8d6b6d878ec5b9c8638fa</dd>
+                        </dl>
+                        <dl><dt>SHA-1</dt>
+                            <dd>c61f2bd7b7f2f7312892b988ce5c057b2cf1cb94</dd>
+                        </dl>
+                        <dl><dt>MD5</dt>
+                            <dd>071620252ec577d55c67f00a4db039f1</dd>
+                        </dl>
+                        <dl><dt>文件大小</dt>
+                            <dd>6.25GB</dd>
+                        </dl>
+                    </div>
+                    <div class="download">
+                        <div class="item">
+                            <div class="label">迅雷下载地址</div>
+                            <div class="edit"><input type="text" value="ed2k://|file|zh-cn_windows_11_consumer_editions_version_23h2_x64_dvd_91207780.iso|6714650624|5E927EF9FA65D78D1898213281CB3757|/" class="input" readonly="readonly"></div>
+                            <div class="copy" data-clipboard-text="ed2k://|file|zh-cn_windows_11_consumer_editions_version_23h2_x64_dvd_91207780.iso|6714650624|5E927EF9FA65D78D1898213281CB3757|/">复制</div>
+                        </div>
+                        <div class="clear">
+                            <div class="item url">
+                                <div class="label">百度网盘地址</div>
+                                <div class="edit"><input type="text" value="https://pan.baidu.com/s/1Ab2sSQGM7BI7YWAdhtyDPw?pwd=msdn" class="input" readonly="readonly"></div>
+                                <div class="copy" data-clipboard-text="https://pan.baidu.com/s/1Ab2sSQGM7BI7YWAdhtyDPw?pwd=msdn">复制</div>
+                            </div>
+                            <div class="item pass">
+                                <div class="label">百度网盘密码</div>
+                                <div class="edit"><input type="text" value="msdn" class="input" readonly="readonly"></div>
+                                <div class="copy" data-clipboard-text="msdn">复制</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">阿里云盘地址</div>
+                            <div class="edit"><input type="text" value="https://www.aliyundrive.com/s/P2iix17TABb" class="input" readonly="readonly"></div>
+                            <div class="copy" data-clipboard-text="https://www.aliyundrive.com/s/P2iix17TABb">复制</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="name">Windows 11 商业版 23H2 x64</div>
+                    <div class="tag"><span class="bit">64位</span><span class="lang">中文简体</span><span class="date">2023-10-31</span><span>专业版</span><span>企业版</span><span>教育版</span><span>专业教育版</span><span>专业工作站版</span></div>
+                    <div class="parm">
+                        <dl><dt>文件名</dt>
+                            <dd>zh-cn_windows_11_business_editions_version_23h2_x64_dvd_2a79e0f1.iso</dd>
+                        </dl>
+                        <dl><dt>SHA-256</dt>
+                            <dd>b4f4caa4ba52b4bcd59072d5361dbdb287856c48ce7c9ee39008dc294f3111df</dd>
+                        </dl>
+                        <dl><dt>SHA-1</dt>
+                            <dd>c81c9b2b7a3597cc6b42fb93ecb7dd9a07899180</dd>
+                        </dl>
+                        <dl><dt>MD5</dt>
+                            <dd>f0cd49e97086cfe70212261c7d5e7910</dd>
+                        </dl>
+                        <dl><dt>文件大小</dt>
+                            <dd>6.16GB</dd>
+                        </dl>
+                    </div>
+                    <div class="download">
+                        <div class="item">
+                            <div class="label">迅雷下载地址</div>
+                            <div class="edit"><input type="text" value="ed2k://|file|zh-cn_windows_11_business_editions_version_23h2_x64_dvd_2a79e0f1.iso|6613571584|1AFADEBC5966E9E689F242549FFB5562|/" class="input" readonly="readonly"></div>
+                            <div class="copy" data-clipboard-text="ed2k://|file|zh-cn_windows_11_business_editions_version_23h2_x64_dvd_2a79e0f1.iso|6613571584|1AFADEBC5966E9E689F242549FFB5562|/">复制</div>
+                        </div>
+                        <div class="clear">
+                            <div class="item url">
+                                <div class="label">百度网盘地址</div>
+                                <div class="edit"><input type="text" value="https://pan.baidu.com/s/1iGLm9ynBQ43FLl0w1rulmg?pwd=msdn" class="input" readonly="readonly"></div>
+                                <div class="copy" data-clipboard-text="https://pan.baidu.com/s/1iGLm9ynBQ43FLl0w1rulmg?pwd=msdn">复制</div>
+                            </div>
+                            <div class="item pass">
+                                <div class="label">百度网盘密码</div>
+                                <div class="edit"><input type="text" value="msdn" class="input" readonly="readonly"></div>
+                                <div class="copy" data-clipboard-text="msdn">复制</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">阿里云盘地址</div>
+                            <div class="edit"><input type="text" value="https://www.aliyundrive.com/s/P2iix17TABb" class="input" readonly="readonly"></div>
+                            <div class="copy" data-clipboard-text="https://www.aliyundrive.com/s/P2iix17TABb">复制</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="back-to-top" id="back-to-top"><a></a></div>
+    <div style="display:none">
+        <script src="https://js.users.51.la/21320721.js" language="JavaScript"></script>
+    </div>
+    <script type="text/javascript" src="https://cdn.sjjzm.com/msdn/js/tool.js"></script>
+</body>
+
+</html>

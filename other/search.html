@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <title>code导航网站</title>
+    <link href="img/monkey.png" rel="icon" type="image/x-ico">
+    <link rel="stylesheet" href="css/home.css">
+    <style type="text/css">
+        body {
+            background-size: 100%;
+        }
+
+        body {
+            background: url("img/tareq-ajalyakin-72aEtYlS5K0-unsplash.jpg") no-repeat center center fixed;
+            /*兼容浏览器版本*/
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function baidu() {
+            text = document.getElementById('baidu_text').value;
+            url = 'https://www.baidu.com/s?wd=' + text;
+            window.open(url, "_blank")
+        }
+    </script>
+
+<body>
+
+    <div id="app">
+
+
+        <form class="" action="https://github.com/search" method="get" target="_blank">
+            <!-- <input type="hidden" name="cl" id="" value="3" />
+				<input type="hidden" name="pn" id="" value="3" /> -->
+            <input type="text" name="q" id="" value="" placeholder="请输入关键字" />
+            <!-- <input type="submit" id="" name="" /> -->
+            <button type="submit" id="" name="">Search</button>
+        </form>
+
+        <form class="" action="https://cn.bing.com/search" method="get" target="_blank">
+            <!-- <input type="hidden" name="cl" id="" value="3" />
+				<input type="hidden" name="pn" id="" value="3" /> -->
+            <input type="text" name="q" id="" value="" placeholder="请输入关键字" />
+            <!-- <input type="submit" id="" name="" /> -->
+            <button type="submit" id="" name="">Search</button>
+        </form>
+
+
+        <form class="" action="https://www.google.com/search" method="get" target="_blank">
+            <!-- <input type="hidden" name="cl" id="" value="3" />
+				<input type="hidden" name="pn" id="" value="3" /> -->
+            <input type="text" name="q" id="" value="" placeholder="请输入关键字" />
+            <!-- <input type="submit" id="" name="" /> -->
+            <button type="submit" id="" name="">Search</button>
+        </form>
+
+        <form class="" action="https://stackoverflow.com/nocaptcha" method="get" target="_blank">
+            <!-- <input type="hidden" name="cl" id="" value="3" />
+				<input type="hidden" name="pn" id="" value="3" /> -->
+            <input type="text" name="s" id="" value="" placeholder="请输入关键字" />
+            <!-- <input type="submit" id="" name="" /> -->
+            <button type="submit" id="" name="">Search</button>
+        </form>
+
+        <form class="" action="https://www.baidu.com/s" method="get" target="_blank">
+            <!-- <input type="hidden" name="cl" id="" value="3" />
+				<input type="hidden" name="pn" id="" value="3" /> -->
+            <input type="text" name="wd" id="" value="" placeholder="请输入关键字" />
+            <!-- <input type="submit" id="" name="" /> -->
+            <button type="submit" id="" name="">Search</button>
+        </form>
+
+        <form class="" action="https://kaifa.baidu.com/searchPage" method="get" target="_blank">
+            <!-- <input type="hidden" name="cl" id="" value="3" />
+				<input type="hidden" name="pn" id="" value="3" /> -->
+            <input type="text" name="wd" id="" value="" placeholder="请输入关键字" />
+            <!-- <input type="submit" id="" name="" /> -->
+            <button type="submit" id="" name="">Search</button>
+        </form>
+    </div>
+
+
+    <div>
+        <form>
+            <input id="text" name="q" value="" autofocu="true" spellcheck="true" />
+            <input class="button button_theme_search button_size_search i-bem " tabindex="-1" role="button"
+                type="submit" formaction="https://cn.bing.com/search" value="Bing" id="submit" />
+
+            <input class="button button_theme_search button_size_search i-bem" tabindex="-1" role="button" type="button"
+                value="Baidu" id="submit" onclick="baidu();" />
+
+            <input class="button button_theme_search button_size_search i-bem" tabindex="-1" role="button" type="submit"
+                formaction="https://www.google.com/search" value="Google" id="submit" />
+
+            <input class="button button_theme_search button_size_search i-bem" tabindex="-1" role="button" type="submit"
+                formaction="https://github.com/search" value="Github" id="submit" />
+
+            <!-- <input class="button button_theme_search button_size_search i-bem" tabindex="-1" role="button" type="submit"
+                formaction="https://stackoverflow.com/nocaptcha" value="StackOverflow" id="submit" /> -->
+        </form>
+
+
+        <form>
+
+            <div class='search2__input' >
+                <span class="input input_size_search 
+                    input_theme_search 
+                    input_search2-clear-hide_yes 
+                    input_ahead_yes 
+                    input_autofocus_capture 
+                    input_clear_yes">
+                    <span class="input__box">
+                        <input class="input__control 
+                        input__input 
+                        mini-suggest__input" id="text" name="q" autocomplete="off"value="" autofocu="true" spellcheck="true" />
+            </div>
+
+            <div class='search2__button '>
+                <input class="button button_theme_search button_size_search i-bem enjoy-css-submit" tabindex="-1" role="button"
+                    type="submit" formaction="https://cn.bing.com/search" value="  Bing  " id="submit" />
+
+            </div>
+            <div class='search2__button'>
+                <input  id="baidu_text" class="button button_theme_search button_size_search i-bem enjoy-css-submit" tabindex="-1" role="button"
+                    type="button" value=" Baidu " id="submit" onclick="baidu();" />
+
+            </div>
+
+            <div class='search2__button'>
+                <input class="button button_theme_search button_size_search i-bem enjoy-css-submit" tabindex="-1" role="button"
+                    type="submit" formaction="https://www.google.com/search" value="Google" id="submit" />
+            </div>
+
+            <div class='search2__button'>
+                <input class="button button_theme_search button_size_search i-bem enjoy-css-submit" tabindex="-1" role="button"
+                    type="submit" formaction="https://github.com/search" value="Github" id="submit" />
+            </div>
+        </form>
+    </div>
+   
+</body>
+
+</html>

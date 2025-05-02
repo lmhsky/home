@@ -1,0 +1,524 @@
+/*
+ Website: 
+ Author: 
+ Date: 
+*/
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+body {
+    font: 12px/1.5 "microsoft yahei";
+    color: #333;
+    background-color: #E3E3E3
+}
+
+::selection {
+    color: #FFF;
+    background: #333
+}
+
+::-moz-selection {
+    color: #FFF;
+    background: #333
+}
+
+::-webkit-scrollbar {
+    width: 11px;
+    height: 11px
+}
+
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0
+}
+
+::-webkit-scrollbar-thumb {
+    padding-top: 100;
+    min-height: 28px;
+    background-color: rgba(0, 0, 0, .2);
+    background-clip: padding-box;
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset 0 -1px 0 rgba(0, 0, 0, .07)
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .25)
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .35)
+}
+
+::-webkit-scrollbar-thumb:horizontal,
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-track:horizontal,
+::-webkit-scrollbar-track:vertical {
+    border-width: 0
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: rgba(0, 0, 0, .05);
+    -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1)
+}
+
+textarea {
+    resize: none
+}
+
+table {
+    empty-cells: show;
+    border-collapse: collapse
+}
+
+caption,
+th {
+    text-align: left;
+    font-weight: 400
+}
+
+ul li {
+    list-style: none
+}
+
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    font-size: 100%
+}
+
+cite,
+em,
+i {
+    font-style: normal
+}
+
+a {
+    color: #464646;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+label {
+    cursor: pointer
+}
+
+input {
+    outline: 0
+}
+
+.a {
+    color: #136EC2
+}
+
+.layout {
+    min-width: 1000px;
+    height: 100%;
+    min-height: 600px;
+    padding-left: 170px;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    overflow: hidden
+}
+
+.side {
+    width: 200px;
+    height: 100%;
+    padding: 0;
+    background-color: #262E3E;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+    z-index: 9
+}
+
+.side .logo {
+    float: left;
+    width: 200px;
+    height: 87px;
+    margin: 39px 20px;
+    /* background: url(https://cdn.sjjzm.com/msdn/images/logo.png) no-repeat */
+}
+
+.nav {
+    float: left;
+    width: 100%;
+    margin: 0 0 30px 10px;
+    overflow: hidden
+}
+
+.nav .list {
+    overflow: hidden
+}
+
+.nav .list li {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 0 10px 10px
+}
+
+.nav .list li a {
+    height: 35px;
+    line-height: 35px;
+    color: #FFF;
+    padding-left: 10px;
+    display: block;
+    -ms-transform: all .3s;
+    -moz-transform: all .3s;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+.nav .list li.active,
+.nav .list li:hover {
+    /* background: url(https://cdn.sjjzm.com/msdn/images/nav_turning.png) no-repeat right bottom */
+}
+
+.nav .list li.active a,
+.nav .list li:hover a {
+    background-color: #F36635;
+    text-decoration: none
+}
+
+.main,
+.clear {
+    overflow: hidden
+}
+
+.header {
+    width: 100%;
+    height: 39px;
+    background-color: #333
+}
+
+.header .list {
+    float: right;
+    overflow: hidden
+}
+
+.header .list li {
+    float: left;
+    overflow: hidden;
+    margin: 0 13px
+}
+
+.header .list li a {
+    height: 39px;
+    line-height: 39px;
+    color: #FFF;
+    padding-left: 23px;
+    display: block
+}
+
+.site {
+    /* background: url(https://cdn.sjjzm.com/msdn/images/svg/site.svg) no-repeat left center */
+}
+
+.favorite {
+    /* background: url(https://cdn.sjjzm.com/msdn/images/svg/favorite.svg) no-repeat left center */
+}
+
+.container {
+    margin: 18px
+}
+
+.menu {
+    padding-bottom: 18px;
+    overflow: hidden
+}
+
+.menu ul {
+    font-size: 14px;
+    font-weight: 700
+}
+
+.menu li {
+    float: left;
+    height: 31px;
+    line-height: 31px;
+    margin-right: 10px;
+    background-color: #FFF;
+    border: 2px solid #D6D6D6;
+    border-radius: 2px;
+    position: relative
+}
+
+.menu li a {
+    padding: 0 10px;
+    display: block;
+    text-decoration: none
+}
+
+.menu li:hover {
+    border-color: #262E3E
+}
+
+.menu li.active {
+    background-color: #262E3E;
+    border-color: #262E3E
+}
+
+.menu li.active i {
+    width: 100%;
+    height: 12px;
+    /* background: url(https://cdn.sjjzm.com/msdn/images/menu_arrow.png) no-repeat bottom center; */
+    position: absolute;
+    bottom: -13px
+}
+
+.menu li.active a {
+    color: #FFF
+}
+
+.explain {
+    margin-bottom: 18px;
+    background-color: #FFF;
+    border-radius: 2px;
+    box-shadow: 0 0 5px #DDD;
+    -webkit-box-shadow: 0 0 5px #DDD;
+    -moz-box-shadow: 0 0 5px #DDD
+}
+
+.explain code {
+    line-height: 1.3;
+    margin: 0 5px;
+    padding: 2px 6px;
+    background: #F9FAFA;
+    border: 1px solid #DED9D9;
+    border-radius: 4px;
+    font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+    display: inline-block;
+    word-break: break-all;
+    white-space: pre;
+}
+
+.explain .title {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #E3E3E3;
+    overflow: hidden
+}
+
+.explain .title h1 {
+    font-size: 16px;
+    padding-left: 15px;
+    color: #666;
+    border-left: 3px solid #f36635
+}
+
+.explain .content {
+    padding: 18px;
+    font-size: 14px
+}
+
+.explain .content .p {
+    line-height: 2;
+    margin-left: 18px
+}
+
+.explain .content .p li {
+    list-style: outside disc
+}
+
+.box {
+    padding: 18px;
+    margin-bottom: 18px;
+    background-color: #FFF;
+    border-radius: 2px;
+    box-shadow: 0 0 5px #DDD;
+    -webkit-box-shadow: 0 0 5px #DDD;
+    -moz-box-shadow: 0 0 5px #DDD
+}
+
+.box .name {
+    font-size: 24px
+}
+
+.box .tag {
+    margin-top: 10px;
+    overflow: hidden
+}
+
+.box .tag span {
+    float: left;
+    height: 23px;
+    line-height: 23px;
+    padding: 0 7px;
+    background-color: #666;
+    color: #FFF;
+    margin-right: 8px;
+    border-radius: 2px
+}
+
+.box .tag span.bit {
+    background-color: #EC6C62
+}
+
+.box .tag span.lang {
+    background-color: #52A3CC
+}
+
+.box .tag span.date {
+    background-color: #009688
+}
+
+.box .parm {
+    margin-top: 10px;
+    overflow: hidden
+}
+
+.box .parm dl {
+    line-height: 27px;
+    font-size: 13px;
+    overflow: hidden
+}
+
+.box .parm dt {
+    float: left;
+    width: 70px;
+    text-align: right;
+    font-weight: 700
+}
+
+.box .parm dd {
+    margin-left: 80px
+}
+
+.box .empty {
+    font-size: 14px
+}
+
+.remark {
+    line-height: 2;
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: 1px solid #F90;
+    background-color: #FFF6E8;
+}
+
+.remark a {
+    color: #0089FF;
+}
+
+.download {
+    overflow: hidden;
+}
+
+.item {
+    height: 39px;
+    line-height: 39px;
+    border: 1px solid #E6E6E6;
+    border-radius: 2px;
+    margin-top: 15px;
+    overflow: hidden;
+    position: relative
+}
+
+.item:hover {
+    border-color: #C6C6C6
+}
+
+.item .label {
+    float: left;
+    width: 100px;
+    text-align: center;
+    background-color: #FBFBFB;
+    border-right: 1px solid #E6E6E6
+}
+
+.item .edit {
+    float: left;
+    position: absolute;
+    left: 110px;
+    right: 110px
+}
+
+.item .edit .input {
+    width: 100%;
+    height: 39px;
+    border: none
+}
+
+.item .copy {
+    float: right;
+    width: 100px;
+    text-align: center;
+    background-color: #FBFBFB;
+    border-left: 1px solid #E6E6E6;
+    cursor: pointer
+}
+
+.item.url {
+    float: left;
+    width: 65%;
+    overflow: hidden;
+}
+
+.item.pass {
+    float: right;
+    width: 30%;
+    overflow: hidden;
+}
+
+.back-to-top {
+    color: #FFF;
+    text-align: center;
+    border-radius: 2px;
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    background: rgba(243, 102, 53, .6);
+    z-index: 1;
+    display: none
+}
+
+.back-to-top:hover {
+    background: rgba(243, 102, 53, 1)
+}
+
+.back-to-top a {
+    width: 50px;
+    height: 50px;
+    /* background: url(https://cdn.sjjzm.com/msdn/images/back_to_top.png) no-repeat center; */
+    cursor: pointer;
+    display: block
+}
+
+.error-404 {
+    width: 350px;
+    height: 400px;
+    margin-left: -90px;
+    margin-top: -180px;
+    position: absolute;
+    left: 50%;
+    top: 50%
+}
+
+.error-404-icon {
+    width: 350px;
+    height: 350px;
+    /* background: url(https://cdn.sjjzm.com/msdn/images/svg/404.svg) no-repeat center */
+}
+
+.error-404-text {
+    height: 30px;
+    line-height: 30px;
+    font-size: 26px;
+    color: #999;
+    text-align: center;
+    margin-top: 20px
+}

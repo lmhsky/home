@@ -1,0 +1,140 @@
+#sub_one{
+    width: 25%;
+    float:left;
+    margin-left: 15px;
+}
+#sub_two{ 
+    width: 25%;
+    float:left;
+}
+#sub_three{ 
+    width: 25%;
+    float:left;
+}
+#sub_three{ 
+    width: 25%;
+    float:left;
+    
+}
+#a_id{
+    color: #1a2961;
+    font-weight:bold;
+}
+
+
+a{
+    display:block;
+    color: #B39223;
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+/* a:visited {
+    color: #865796;
+    text-decoration: none;
+} */
+
+a:hover,a:active {
+    color: #B39223;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: oswald, helvetica, sans-serif;
+}
+
+
+h4 {
+    margin-left: 15px;
+}
+
+
+body {
+    font-family: oxygen, sans-serif;
+    background: #1C2128;
+    color: #33290A;
+}
+
+/* .div_body{
+    padding-bottom: 8px;
+    margin: 0em auto;
+    padding: 1.85em 1em;
+} */
+
+/* .big_div_body{
+    padding-bottom: 8px;
+    margin: 0em auto;
+    padding: 1.85em 1em;
+} */
+
+#banner h1 {
+    /* margin: 20px 0 47px .05em; */
+    text-shadow: 3px 3px 0 #F8F4EE;
+    font-size: 3em;
+}
+
+#banner h1>a {
+    color: #2C1D00;
+    transition: none;
+}
+
+#banner0 {
+    text-align: center;
+    background: #2D333B;
+    margin: 0em auto;
+    padding: 1em;
+    width: 50em;
+    border: thin solid;
+    border-color: #2D333B #2D333B #2D333B;
+    box-shadow: 0 0.1em 0.3em #2D333B;
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+
+#featured {
+    background: #2D333B;
+    margin: 0em auto;
+    padding: 1em 1em;
+    width: 55em;
+    border: thin solid;
+    border-color: #2D333B #2D333B #2D333B;
+    box-shadow: 0 0.1em 0.3em #2D333B;
+    /* border-radius: 0.5em; */
+    /* border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em; */
+    overflow: hidden;
+}
+
+
+#banner {
+    /* text-align: center; */
+    background: #2D333B;
+    /* margin: 5px auto; */
+    margin: 0em auto;
+    /* padding: 1em; */
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 55em;
+    border: thin solid;
+    border-color: #2D333B #2D333B #2D333B;
+    box-shadow: 0 0.1em 0.3em #2D333B;
+    /* border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em; */
+}
+
+
+#banner3 {
+    text-align: left;
+    background: #2D333B;
+    margin: 0em auto;
+    /* padding: 1em; */
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 55em;
+    border: thin solid;
+    border-color: #2D333B #2D333B #2D333B;
+    box-shadow: 0 0.1em 0.3em #2D333B;
+    /* border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    margin-bottom: 8px; */
+}
