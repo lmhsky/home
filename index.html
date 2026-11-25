@@ -2835,6 +2835,28 @@
             content: "flwDwF,"
         }
 
+        .xcontainer {
+            /* height: 200px;
+            position: relative;
+            border: 3px solid; */
+        }
+
+        .xvertical-center {
+            /* margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%); */
+            width:100%;
+            height:100%;
+            margin-left: 72%;
+            /* background:#ccc; */
+            display:flex;
+            align-items: center;
+            justify-content:space-around;
+        }
+
+
         /*!sc*/
     </style>
 
@@ -2992,142 +3014,185 @@ function Ask_Search() {
                             class="sc-7725dd90-5 kMebOO">完成后，刷新本页面即可开始使用 Wolfram|Alpha。</span></div>
                 </div>
             </noscript> -->
-            <header class="sc-23deba95-0 bExFZK">
+
+            <header class="sc-23deba95-0 bExFZK" magin-right:100px>
                 <!-- <nav class="sc-23deba95-1 eIjWBP sc-615f66d5-0 dNpcux"></nav> -->
-                <nav class="sc-23deba95-1 eIjWBP sc-615f66d5-0 dNpcux">
-                    <button type="button"
-                        class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 ixWLXk">
-                        <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 20 20">
-                            <path class="mainColor"
-                                d="M16 5H4a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V6a1 1 0 00-1-1zm-9.5 8.5a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5v-1A.5.5 0 015 12h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5v-1A.5.5 0 015 9h1a.5.5 0 01.5.5zm0-3A.5.5 0 016 8H5a.5.5 0 01-.5-.5v-1A.5.5 0 015 6h1a.5.5 0 01.5.5zm3 6a.5.5 0 01-.5.5H8a.5.5 0 01-.5-.5v-1A.5.5 0 018 12h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5H8a.5.5 0 01-.5-.5v-1A.5.5 0 018 9h1a.5.5 0 01.5.5zm0-3A.5.5 0 019 8H8a.5.5 0 01-.5-.5v-1A.5.5 0 018 6h1a.5.5 0 01.5.5zm3 6a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1A.5.5 0 0111 9h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1A.5.5 0 0111 6h1a.5.5 0 01.5.5zm3 6a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1A.5.5 0 0114 9h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1A.5.5 0 0114 6h1a.5.5 0 01.5.5z"
-                                fill="#777"></path>
-                        </svg> -->
-                        <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/阿里云盘b.png" alt="search" width="60" height="60">
-                        <a href="https://www.alipan.com/" target="_blank" colorInfo="[object Object]"
+                <nav class="sc-23deba95-1 eIjWBP sc-615f66d5-0 dNpcux hkxlVw" magin-right:50px >
+
+                <ul class="eMiRYw" magin-right:50px >
+                     <li class="sc-e16a952f-0 kVRNxZ">
+                       <button type="button"
+                            class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 ixWLXk">
+                            <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 20 20">
+                                <path class="mainColor"
+                                    d="M16 5H4a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V6a1 1 0 00-1-1zm-9.5 8.5a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5v-1A.5.5 0 015 12h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5v-1A.5.5 0 015 9h1a.5.5 0 01.5.5zm0-3A.5.5 0 016 8H5a.5.5 0 01-.5-.5v-1A.5.5 0 015 6h1a.5.5 0 01.5.5zm3 6a.5.5 0 01-.5.5H8a.5.5 0 01-.5-.5v-1A.5.5 0 018 12h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5H8a.5.5 0 01-.5-.5v-1A.5.5 0 018 9h1a.5.5 0 01.5.5zm0-3A.5.5 0 019 8H8a.5.5 0 01-.5-.5v-1A.5.5 0 018 6h1a.5.5 0 01.5.5zm3 6a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1A.5.5 0 0111 9h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1A.5.5 0 0111 6h1a.5.5 0 01.5.5zm3 6a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1A.5.5 0 0114 9h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1A.5.5 0 0114 6h1a.5.5 0 01.5.5z"
+                                    fill="#777"></path>
+                            </svg> -->
+                            <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/阿里云盘b.png" alt="search" width="60" height="60">
+                            <a href="https://www.alipan.com/" target="_blank" colorInfo="[object Object]"
+                                class="_3BQD _dGJe _ZJzB sc-c233f61b-2 sc-c233f61b-3 bcsOup lfJXKd sc-e16a952f-1 jgMzQJ"><span
+                                    class="sc-c233f61b-0 zsCsP">阿里云盘</span></a>
+                            <!-- <span class="sc-c233f61b-0 zsCsP _YVy_"></span> -->
+                        </button>
+                    </li>
+
+                         <li class="sc-e16a952f-0 kVRNxZ">
+                        <button type="button"
+                            class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 ixWLXk">
+                            <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" fill="none">
+                                <path class="mainColor" d="M5 20.5h14v-2H5v2zm0-10h4v6h6v-6h4l-7-7-7 7z" fill="#888"></path>
+                            </svg> -->
+                            <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/百度云盘b.png" alt="search" width="60" height="60">
+                            <a href="https://pan.baidu.com/" target="_blank" colorInfo="[object Object]"
                             class="_3BQD _dGJe _ZJzB sc-c233f61b-2 sc-c233f61b-3 bcsOup lfJXKd sc-e16a952f-1 jgMzQJ"><span
-                                class="sc-c233f61b-0 zsCsP">阿里云盘</span></a>
-                        <!-- <span class="sc-c233f61b-0 zsCsP _YVy_"></span> -->
-                    </button>
-                    <button type="button"
-                        class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 ixWLXk">
-                        <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" fill="none">
-                            <path class="mainColor" d="M5 20.5h14v-2H5v2zm0-10h4v6h6v-6h4l-7-7-7 7z" fill="#888"></path>
-                        </svg> -->
-                        <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/百度云盘b.png" alt="search" width="60" height="60">
-                        <a href="https://pan.baidu.com/" target="_blank" colorInfo="[object Object]"
-                        class="_3BQD _dGJe _ZJzB sc-c233f61b-2 sc-c233f61b-3 bcsOup lfJXKd sc-e16a952f-1 jgMzQJ"><span
-                            class="sc-c233f61b-0 zsCsP">百度云盘</span></a>
-                        <!-- <span class="sc-c233f61b-0 zsCsP _YVy_">百度云盘</span> -->
-                    </button>
-                    <button type="button"
-                        class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 jqgbYZ">
-                        <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24">
-                            <path class="mainColor" fill="#F96932" fill-rule="evenodd"
-                                d="M20.753 15.22c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V17h-2.067a.448.448 0 0 1-.308-.12l-2.48-2.361 1.874-1.786 1.856 1.767H16.5v-1.25c0-.67.912-1 1.44-.53l2.813 2.5zM3.422 9.5C3.189 9.5 3 9.332 3 9.125v-1.75C3 7.168 3.189 7 3.422 7h3.895c.117 0 .228.043.308.12l2.48 2.362-1.874 1.785L6.375 9.5H3.422zm13.078 0h-1.125l-7.75 7.38a.448.448 0 0 1-.308.12H3.422C3.189 17 3 16.832 3 16.625v-1.75c0-.207.189-.375.422-.375h2.953l7.75-7.38a.448.448 0 0 1 .308-.12H16.5V5.75c0-.67.912-1 1.44-.53l2.813 2.5c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V9.5z">
-                            </path>
-                        </svg> -->
-                        <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/夸克网盘.png" alt="search" width="60" height="60">
-                        <a href="https://pan.quark.cn/" target="_blank" colorInfo="[object Object]"
-                        class="_3BQD _dGJe _ZJzB sc-c233f61b-2 sc-c233f61b-3 bcsOup lfJXKd sc-e16a952f-1 jgMzQJ"><span
-                            class="sc-c233f61b-0 zsCsP">夸克网盘</span></a>
-                        <!-- <span class="sc-c233f61b-0 zsCsP _YVy_">夸克网盘</span> -->
-                    </button>
-                    <button type="button"
-                        class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 ixWLXk">
-                        <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 20 20">
-                            <path class="mainColor"
-                                d="M16 5H4a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V6a1 1 0 00-1-1zm-9.5 8.5a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5v-1A.5.5 0 015 12h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5v-1A.5.5 0 015 9h1a.5.5 0 01.5.5zm0-3A.5.5 0 016 8H5a.5.5 0 01-.5-.5v-1A.5.5 0 015 6h1a.5.5 0 01.5.5zm3 6a.5.5 0 01-.5.5H8a.5.5 0 01-.5-.5v-1A.5.5 0 018 12h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5H8a.5.5 0 01-.5-.5v-1A.5.5 0 018 9h1a.5.5 0 01.5.5zm0-3A.5.5 0 019 8H8a.5.5 0 01-.5-.5v-1A.5.5 0 018 6h1a.5.5 0 01.5.5zm3 6a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1A.5.5 0 0111 9h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1A.5.5 0 0111 6h1a.5.5 0 01.5.5zm3 6a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1A.5.5 0 0114 9h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1A.5.5 0 0114 6h1a.5.5 0 01.5.5z"
-                                fill="#777"></path>
-                        </svg> -->
-                        <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/dropbox.png" alt="search" width="60" height="60">
-                        <a href="https://www.dropbox.com/" target="_blank" colorInfo="[object Object]"
-                        class="_3BQD _dGJe _ZJzB sc-c233f61b-2 sc-c233f61b-3 bcsOup lfJXKd sc-e16a952f-1 jgMzQJ"><span
-                            class="sc-c233f61b-0 zsCsP">Dropbox</span></a>
-                        <!-- <span class="sc-c233f61b-0 zsCsP _YVy_">Dropbox</span> -->
-                    </button>
-                    <button type="button"
-                        class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 ixWLXk">
-                        <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" fill="none">
-                            <path class="mainColor" d="M5 20.5h14v-2H5v2zm0-10h4v6h6v-6h4l-7-7-7 7z" fill="#888"></path>
-                        </svg> -->
-                        <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/OneDrive.png" alt="search" width="60" height="60">
-                        <a href="https://drive.google.com/drive/home" target="_blank" colorInfo="[object Object]"
-                        class="_3BQD _dGJe _ZJzB sc-c233f61b-2 sc-c233f61b-3 bcsOup lfJXKd sc-e16a952f-1 jgMzQJ"><span
-                            class="sc-c233f61b-0 zsCsP">Drive</span></a>
-                        <!-- <span class="sc-c233f61b-0 zsCsP _YVy_">Onedrive</span> -->
-                    </button>
-                    <button type="button"
-                        class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 jqgbYZ">
-                        <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24">
-                            <path class="mainColor" fill="#F96932" fill-rule="evenodd"
-                                d="M20.753 15.22c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V17h-2.067a.448.448 0 0 1-.308-.12l-2.48-2.361 1.874-1.786 1.856 1.767H16.5v-1.25c0-.67.912-1 1.44-.53l2.813 2.5zM3.422 9.5C3.189 9.5 3 9.332 3 9.125v-1.75C3 7.168 3.189 7 3.422 7h3.895c.117 0 .228.043.308.12l2.48 2.362-1.874 1.785L6.375 9.5H3.422zm13.078 0h-1.125l-7.75 7.38a.448.448 0 0 1-.308.12H3.422C3.189 17 3 16.832 3 16.625v-1.75c0-.207.189-.375.422-.375h2.953l7.75-7.38a.448.448 0 0 1 .308-.12H16.5V5.75c0-.67.912-1 1.44-.53l2.813 2.5c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V9.5z">
-                            </path>
-                        </svg> -->
-                        <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/drive.png" alt="search" width="60" height="60">
-                        <a href="https://www.microsoft.com/zh-cn/microsoft-365/onedrive/online-cloud-storage" target="_blank" colorInfo="[object Object]"
-                        class="_3BQD _dGJe _ZJzB sc-c233f61b-2 sc-c233f61b-3 bcsOup lfJXKd sc-e16a952f-1 jgMzQJ"><span
-                            class="sc-c233f61b-0 zsCsP">Onedrive</span></a>
-                        <!-- <span class="sc-c233f61b-0 zsCsP _YVy_">Google drive</span> -->
-                    </button>
+                                class="sc-c233f61b-0 zsCsP">百度云盘</span></a>
+                            <!-- <span class="sc-c233f61b-0 zsCsP _YVy_">百度云盘</span> -->
+                        </button>
+                    </li>
 
-                     <button type="button"
-                        class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 jqgbYZ">
-                        <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24">
-                            <path class="mainColor" fill="#F96932" fill-rule="evenodd"
-                                d="M20.753 15.22c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V17h-2.067a.448.448 0 0 1-.308-.12l-2.48-2.361 1.874-1.786 1.856 1.767H16.5v-1.25c0-.67.912-1 1.44-.53l2.813 2.5zM3.422 9.5C3.189 9.5 3 9.332 3 9.125v-1.75C3 7.168 3.189 7 3.422 7h3.895c.117 0 .228.043.308.12l2.48 2.362-1.874 1.785L6.375 9.5H3.422zm13.078 0h-1.125l-7.75 7.38a.448.448 0 0 1-.308.12H3.422C3.189 17 3 16.832 3 16.625v-1.75c0-.207.189-.375.422-.375h2.953l7.75-7.38a.448.448 0 0 1 .308-.12H16.5V5.75c0-.67.912-1 1.44-.53l2.813 2.5c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V9.5z">
-                            </path>
-                        </svg> -->
-                        <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/email/QQ邮箱.png" alt="search" width="120" height="60">
-                        <a href="https://wx.mail.qq.com/" target="_blank" colorInfo="[object Object]"
-                        class="_3BQD _dGJe _ZJzB sc-c233f61b-2 sc-c233f61b-3 bcsOup lfJXKd sc-e16a952f-1 jgMzQJ"><span
-                            class="sc-c233f61b-0 zsCsP">QQ邮箱</span></a>
-                        <!-- <span class="sc-c233f61b-0 zsCsP _YVy_">Google drive</span> -->
-                    </button>
+                        <li class="sc-e16a952f-0 kVRNxZ">
+                         <button type="button"
+                            class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 jqgbYZ">
+                            <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24">
+                                <path class="mainColor" fill="#F96932" fill-rule="evenodd"
+                                    d="M20.753 15.22c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V17h-2.067a.448.448 0 0 1-.308-.12l-2.48-2.361 1.874-1.786 1.856 1.767H16.5v-1.25c0-.67.912-1 1.44-.53l2.813 2.5zM3.422 9.5C3.189 9.5 3 9.332 3 9.125v-1.75C3 7.168 3.189 7 3.422 7h3.895c.117 0 .228.043.308.12l2.48 2.362-1.874 1.785L6.375 9.5H3.422zm13.078 0h-1.125l-7.75 7.38a.448.448 0 0 1-.308.12H3.422C3.189 17 3 16.832 3 16.625v-1.75c0-.207.189-.375.422-.375h2.953l7.75-7.38a.448.448 0 0 1 .308-.12H16.5V5.75c0-.67.912-1 1.44-.53l2.813 2.5c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V9.5z">
+                                </path>
+                            </svg> -->
+                            <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/夸克网盘.png" alt="search" width="60" height="60">
+                            <a href="https://pan.quark.cn/" target="_blank" colorInfo="[object Object]"
+                            class="_3BQD _dGJe _ZJzB sc-c233f61b-2 sc-c233f61b-3 bcsOup lfJXKd sc-e16a952f-1 jgMzQJ"><span
+                                class="sc-c233f61b-0 zsCsP">夸克网盘</span></a>
+                            <!-- <span class="sc-c233f61b-0 zsCsP _YVy_">夸克网盘</span> -->
+                        </button>
 
-                     <button type="button"
-                        class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 jqgbYZ">
-                        <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24">
-                            <path class="mainColor" fill="#F96932" fill-rule="evenodd"
-                                d="M20.753 15.22c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V17h-2.067a.448.448 0 0 1-.308-.12l-2.48-2.361 1.874-1.786 1.856 1.767H16.5v-1.25c0-.67.912-1 1.44-.53l2.813 2.5zM3.422 9.5C3.189 9.5 3 9.332 3 9.125v-1.75C3 7.168 3.189 7 3.422 7h3.895c.117 0 .228.043.308.12l2.48 2.362-1.874 1.785L6.375 9.5H3.422zm13.078 0h-1.125l-7.75 7.38a.448.448 0 0 1-.308.12H3.422C3.189 17 3 16.832 3 16.625v-1.75c0-.207.189-.375.422-.375h2.953l7.75-7.38a.448.448 0 0 1 .308-.12H16.5V5.75c0-.67.912-1 1.44-.53l2.813 2.5c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V9.5z">
-                            </path>
-                        </svg> -->
-                        <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/email/126163.png" alt="search" width="60" height="60">
-                        <a href="https://email.163.com/" target="_blank" colorInfo="[object Object]"
-                        class="_3BQD _dGJe _ZJzB sc-c233f61b-2 sc-c233f61b-3 bcsOup lfJXKd sc-e16a952f-1 jgMzQJ"><span
-                            class="sc-c233f61b-0 zsCsP">126/163邮箱</span></a>
-                        <!-- <span class="sc-c233f61b-0 zsCsP _YVy_">Google drive</span> -->
-                    </button>
+                    </li>
 
-                     <button type="button"
-                        class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 jqgbYZ">
-                        <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24">
-                            <path class="mainColor" fill="#F96932" fill-rule="evenodd"
-                                d="M20.753 15.22c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V17h-2.067a.448.448 0 0 1-.308-.12l-2.48-2.361 1.874-1.786 1.856 1.767H16.5v-1.25c0-.67.912-1 1.44-.53l2.813 2.5zM3.422 9.5C3.189 9.5 3 9.332 3 9.125v-1.75C3 7.168 3.189 7 3.422 7h3.895c.117 0 .228.043.308.12l2.48 2.362-1.874 1.785L6.375 9.5H3.422zm13.078 0h-1.125l-7.75 7.38a.448.448 0 0 1-.308.12H3.422C3.189 17 3 16.832 3 16.625v-1.75c0-.207.189-.375.422-.375h2.953l7.75-7.38a.448.448 0 0 1 .308-.12H16.5V5.75c0-.67.912-1 1.44-.53l2.813 2.5c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V9.5z">
-                            </path>
-                        </svg> -->
-                        <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/email/Gmail.png" alt="search" width="60" height="60">
-                        <a href="https://mail.google.com/mail" target="_blank" colorInfo="[object Object]"
-                        class="_3BQD _dGJe _ZJzB sc-c233f61b-2 sc-c233f61b-3 bcsOup lfJXKd sc-e16a952f-1 jgMzQJ"><span
-                            class="sc-c233f61b-0 zsCsP">Gmail</span></a>
-                        <!-- <span class="sc-c233f61b-0 zsCsP _YVy_">Google drive</span> -->
-                    </button>
+                       
+                        <li class="sc-e16a952f-0 kVRNxZ">
+                         <button type="button"
+                            class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 ixWLXk">
+                            <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 20 20">
+                                <path class="mainColor"
+                                    d="M16 5H4a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V6a1 1 0 00-1-1zm-9.5 8.5a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5v-1A.5.5 0 015 12h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5v-1A.5.5 0 015 9h1a.5.5 0 01.5.5zm0-3A.5.5 0 016 8H5a.5.5 0 01-.5-.5v-1A.5.5 0 015 6h1a.5.5 0 01.5.5zm3 6a.5.5 0 01-.5.5H8a.5.5 0 01-.5-.5v-1A.5.5 0 018 12h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5H8a.5.5 0 01-.5-.5v-1A.5.5 0 018 9h1a.5.5 0 01.5.5zm0-3A.5.5 0 019 8H8a.5.5 0 01-.5-.5v-1A.5.5 0 018 6h1a.5.5 0 01.5.5zm3 6a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1A.5.5 0 0111 9h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1A.5.5 0 0111 6h1a.5.5 0 01.5.5zm3 6a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1A.5.5 0 0114 9h1a.5.5 0 01.5.5zm0-3a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1A.5.5 0 0114 6h1a.5.5 0 01.5.5z"
+                                    fill="#777"></path>
+                            </svg> -->
+                            <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/dropbox.png" alt="search" width="60" height="60">
+                            <a href="https://www.dropbox.com/" target="_blank" colorInfo="[object Object]"
+                            class="_3BQD _dGJe _ZJzB sc-c233f61b-2 sc-c233f61b-3 bcsOup lfJXKd sc-e16a952f-1 jgMzQJ"><span
+                                class="sc-c233f61b-0 zsCsP">Dropbox</span></a>
+                            <!-- <span class="sc-c233f61b-0 zsCsP _YVy_">Dropbox</span> -->
+                        </button>
 
-                     <button type="button"
-                        class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 jqgbYZ">
-                        <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24">
-                            <path class="mainColor" fill="#F96932" fill-rule="evenodd"
-                                d="M20.753 15.22c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V17h-2.067a.448.448 0 0 1-.308-.12l-2.48-2.361 1.874-1.786 1.856 1.767H16.5v-1.25c0-.67.912-1 1.44-.53l2.813 2.5zM3.422 9.5C3.189 9.5 3 9.332 3 9.125v-1.75C3 7.168 3.189 7 3.422 7h3.895c.117 0 .228.043.308.12l2.48 2.362-1.874 1.785L6.375 9.5H3.422zm13.078 0h-1.125l-7.75 7.38a.448.448 0 0 1-.308.12H3.422C3.189 17 3 16.832 3 16.625v-1.75c0-.207.189-.375.422-.375h2.953l7.75-7.38a.448.448 0 0 1 .308-.12H16.5V5.75c0-.67.912-1 1.44-.53l2.813 2.5c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V9.5z">
-                            </path>
-                        </svg> -->
-                        <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/email/Outlook.png" alt="search" width="60" height="60">
-                        <a href="https://login.live.com/" target="_blank" colorInfo="[object Object]"
-                        class="_3BQD _dGJe _ZJzB sc-c233f61b-2 sc-c233f61b-3 bcsOup lfJXKd sc-e16a952f-1 jgMzQJ"><span
-                            class="sc-c233f61b-0 zsCsP">Outlook</span></a>
-                        <!-- <span class="sc-c233f61b-0 zsCsP _YVy_">Google drive</span> -->
-                    </button>
+                    </li>
 
+                         <li class="sc-e16a952f-0 kVRNxZ">
+                          <button type="button"
+                            class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 ixWLXk">
+                            <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" fill="none">
+                                <path class="mainColor" d="M5 20.5h14v-2H5v2zm0-10h4v6h6v-6h4l-7-7-7 7z" fill="#888"></path>
+                            </svg> -->
+                            <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/OneDrive.png" alt="search" width="60" height="60">
+                            <a href="https://drive.google.com/drive/home" target="_blank" colorInfo="[object Object]"
+                            class="_3BQD _dGJe _ZJzB sc-c233f61b-2 sc-c233f61b-3 bcsOup lfJXKd sc-e16a952f-1 jgMzQJ"><span
+                                class="sc-c233f61b-0 zsCsP">Drive</span></a>
+                            <!-- <span class="sc-c233f61b-0 zsCsP _YVy_">Onedrive</span> -->
+                        </button>
+
+
+                    </li>
+
+
+                      
+                         <li class="sc-e16a952f-0 kVRNxZ">
+                        <button type="button"
+                            class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 jqgbYZ">
+                            <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24">
+                                <path class="mainColor" fill="#F96932" fill-rule="evenodd"
+                                    d="M20.753 15.22c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V17h-2.067a.448.448 0 0 1-.308-.12l-2.48-2.361 1.874-1.786 1.856 1.767H16.5v-1.25c0-.67.912-1 1.44-.53l2.813 2.5zM3.422 9.5C3.189 9.5 3 9.332 3 9.125v-1.75C3 7.168 3.189 7 3.422 7h3.895c.117 0 .228.043.308.12l2.48 2.362-1.874 1.785L6.375 9.5H3.422zm13.078 0h-1.125l-7.75 7.38a.448.448 0 0 1-.308.12H3.422C3.189 17 3 16.832 3 16.625v-1.75c0-.207.189-.375.422-.375h2.953l7.75-7.38a.448.448 0 0 1 .308-.12H16.5V5.75c0-.67.912-1 1.44-.53l2.813 2.5c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V9.5z">
+                                </path>
+                            </svg> -->
+                            <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/drive.png" alt="search" width="60" height="60">
+                            <a href="https://www.microsoft.com/zh-cn/microsoft-365/onedrive/online-cloud-storage" target="_blank" colorInfo="[object Object]"
+                            class="_3BQD _dGJe _ZJzB sc-c233f61b-2 sc-c233f61b-3 bcsOup lfJXKd sc-e16a952f-1 jgMzQJ"><span
+                                class="sc-c233f61b-0 zsCsP">Onedrive</span></a>
+                            <!-- <span class="sc-c233f61b-0 zsCsP _YVy_">Google drive</span> -->
+                        </button>
+                    </li>
+
+                        
+
+                         <li class="sc-e16a952f-0 kVRNxZ">
+                        <button type="button"
+                            class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 jqgbYZ">
+                            <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24">
+                                <path class="mainColor" fill="#F96932" fill-rule="evenodd"
+                                    d="M20.753 15.22c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V17h-2.067a.448.448 0 0 1-.308-.12l-2.48-2.361 1.874-1.786 1.856 1.767H16.5v-1.25c0-.67.912-1 1.44-.53l2.813 2.5zM3.422 9.5C3.189 9.5 3 9.332 3 9.125v-1.75C3 7.168 3.189 7 3.422 7h3.895c.117 0 .228.043.308.12l2.48 2.362-1.874 1.785L6.375 9.5H3.422zm13.078 0h-1.125l-7.75 7.38a.448.448 0 0 1-.308.12H3.422C3.189 17 3 16.832 3 16.625v-1.75c0-.207.189-.375.422-.375h2.953l7.75-7.38a.448.448 0 0 1 .308-.12H16.5V5.75c0-.67.912-1 1.44-.53l2.813 2.5c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V9.5z">
+                                </path>
+                            </svg> -->
+                            <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/email/QQ邮箱.png" alt="search" width="120" height="60">
+                            <a href="https://wx.mail.qq.com/" target="_blank" colorInfo="[object Object]"
+                            class="_3BQD _dGJe _ZJzB sc-c233f61b-2 sc-c233f61b-3 bcsOup lfJXKd sc-e16a952f-1 jgMzQJ"><span
+                                class="sc-c233f61b-0 zsCsP">QQ邮箱</span></a>
+                            <!-- <span class="sc-c233f61b-0 zsCsP _YVy_">Google drive</span> -->
+                        </button>
+                    </li>
+
+                        
+                         <li class="sc-e16a952f-0 kVRNxZ">
+                       <button type="button"
+                            class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 jqgbYZ">
+                            <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24">
+                                <path class="mainColor" fill="#F96932" fill-rule="evenodd"
+                                    d="M20.753 15.22c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V17h-2.067a.448.448 0 0 1-.308-.12l-2.48-2.361 1.874-1.786 1.856 1.767H16.5v-1.25c0-.67.912-1 1.44-.53l2.813 2.5zM3.422 9.5C3.189 9.5 3 9.332 3 9.125v-1.75C3 7.168 3.189 7 3.422 7h3.895c.117 0 .228.043.308.12l2.48 2.362-1.874 1.785L6.375 9.5H3.422zm13.078 0h-1.125l-7.75 7.38a.448.448 0 0 1-.308.12H3.422C3.189 17 3 16.832 3 16.625v-1.75c0-.207.189-.375.422-.375h2.953l7.75-7.38a.448.448 0 0 1 .308-.12H16.5V5.75c0-.67.912-1 1.44-.53l2.813 2.5c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V9.5z">
+                                </path>
+                            </svg> -->
+                            <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/email/126163.png" alt="search" width="60" height="60">
+                            <a href="https://email.163.com/" target="_blank" colorInfo="[object Object]"
+                            class="_3BQD _dGJe _ZJzB sc-c233f61b-2 sc-c233f61b-3 bcsOup lfJXKd sc-e16a952f-1 jgMzQJ"><span
+                                class="sc-c233f61b-0 zsCsP">126/163邮箱</span></a>
+                            <!-- <span class="sc-c233f61b-0 zsCsP _YVy_">Google drive</span> -->
+                        </button>
+
+                    </li>
+
+                         <li class="sc-e16a952f-0 kVRNxZ">
+                         <button type="button"
+                            class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 jqgbYZ">
+                            <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24">
+                                <path class="mainColor" fill="#F96932" fill-rule="evenodd"
+                                    d="M20.753 15.22c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V17h-2.067a.448.448 0 0 1-.308-.12l-2.48-2.361 1.874-1.786 1.856 1.767H16.5v-1.25c0-.67.912-1 1.44-.53l2.813 2.5zM3.422 9.5C3.189 9.5 3 9.332 3 9.125v-1.75C3 7.168 3.189 7 3.422 7h3.895c.117 0 .228.043.308.12l2.48 2.362-1.874 1.785L6.375 9.5H3.422zm13.078 0h-1.125l-7.75 7.38a.448.448 0 0 1-.308.12H3.422C3.189 17 3 16.832 3 16.625v-1.75c0-.207.189-.375.422-.375h2.953l7.75-7.38a.448.448 0 0 1 .308-.12H16.5V5.75c0-.67.912-1 1.44-.53l2.813 2.5c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V9.5z">
+                                </path>
+                            </svg> -->
+                            <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/email/Gmail.png" alt="search" width="60" height="60">
+                            <a href="https://mail.google.com/mail" target="_blank" colorInfo="[object Object]"
+                            class="_3BQD _dGJe _ZJzB sc-c233f61b-2 sc-c233f61b-3 bcsOup lfJXKd sc-e16a952f-1 jgMzQJ"><span
+                                class="sc-c233f61b-0 zsCsP">Gmail</span></a>
+                            <!-- <span class="sc-c233f61b-0 zsCsP _YVy_">Google drive</span> -->
+                        </button>
+
+                    </li>
+
+                        <li class="sc-e16a952f-0 kVRNxZ">
+                         <button type="button"
+                            class="_3BQD trayButtonOrange disabledButton sc-c233f61b-2 sc-c233f61b-3 bnuHOz elRxDv sc-51068a72-0 jqgbYZ">
+                            <!-- <svg class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24">
+                                <path class="mainColor" fill="#F96932" fill-rule="evenodd"
+                                    d="M20.753 15.22c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V17h-2.067a.448.448 0 0 1-.308-.12l-2.48-2.361 1.874-1.786 1.856 1.767H16.5v-1.25c0-.67.912-1 1.44-.53l2.813 2.5zM3.422 9.5C3.189 9.5 3 9.332 3 9.125v-1.75C3 7.168 3.189 7 3.422 7h3.895c.117 0 .228.043.308.12l2.48 2.362-1.874 1.785L6.375 9.5H3.422zm13.078 0h-1.125l-7.75 7.38a.448.448 0 0 1-.308.12H3.422C3.189 17 3 16.832 3 16.625v-1.75c0-.207.189-.375.422-.375h2.953l7.75-7.38a.448.448 0 0 1 .308-.12H16.5V5.75c0-.67.912-1 1.44-.53l2.813 2.5c.33.293.33.767 0 1.06l-2.813 2.5c-.527.469-1.44.14-1.44-.53V9.5z">
+                                </path>
+                            </svg> -->
+                            <img class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 24 24" src="img/email/Outlook.png" alt="search" width="60" height="60">
+                            <a href="https://login.live.com/" target="_blank" colorInfo="[object Object]"
+                            class="_3BQD _dGJe _ZJzB sc-c233f61b-2 sc-c233f61b-3 bcsOup lfJXKd sc-e16a952f-1 jgMzQJ"><span
+                                class="sc-c233f61b-0 zsCsP">Outlook</span></a>
+                            <!-- <span class="sc-c233f61b-0 zsCsP _YVy_">Google drive</span> -->
+                        </button>
+                    </li>
+
+                       
+                </ul>
                 </nav>
             </header>
+
             <main class="sc-615f66d5-0 ehQBWl sc-7939c3d0-0 iAhhat">
                 <div class="sc-b26c6d33-0 flwDwF sc-b26c6d33-0 flwDwF">
                     <div class="sc-f9e48013-0 jMKtCu"><span class="sc-8f3a1ec7-0 gifqvP" style="margin-top: 80px;">
@@ -3504,11 +3569,27 @@ function Ask_Search() {
                                         role="presentation"> ›</span></p></h2>
                             <ul class="sc-ee0fc588-2 nkpSK">
                         
-                                <li class="sc-8081b5c5-0 lmlYtl"><a href="https://metaso.cn/" target="_blank"
+                                <li class="sc-8081b5c5-0 lmlYtl"><a href="https://chatgpt.com/"  target="_blank"
                                 class="_3BQD purpleBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 jWNmxS hYwcJg">
-                                <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/秘塔AI-copy.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">秘塔AI</span></a></li>
-                        
+                                <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/ChatGPT.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">ChatGPT</span></a></li> 
+                                
+                                
+                                <li class="sc-8081b5c5-0 lmlYtl"><a href="https://grok.com/"  target="_blank"
+                                class="_3BQD purpleBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 jWNmxS hYwcJg">
+                                <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/grok.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">Grok</span></a></li> 
+                                
+                                <li class="sc-8081b5c5-0 lmlYtl"><a href="https://gemini.google.com/app"  target="_blank"
+                                class="_3BQD purpleBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 jWNmxS hYwcJg">
+                                <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/gemini-ai.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">Gemini</span></a></li>
+                                
+                                <li class="sc-8081b5c5-0 lmlYtl"><a href="https://claude.ai/"  target="_blank"
+                                class="_3BQD purpleBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 jWNmxS hYwcJg">
+                                <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/Claude.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">Claude</span></a></li>
+
                                 <li class="sc-8081b5c5-0 lmlYtl"><a href="https://yuanbao.tencent.com/"  target="_blank"
                                 class="_3BQD purpleBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 jWNmxS hYwcJg">
                                 <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/腾讯元宝.png" alt="search" width="30" height="30" style="margin-left: 8px;">
@@ -3534,44 +3615,25 @@ function Ask_Search() {
                                 <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/通义千问.png" alt="search" width="30" height="30" style="margin: 5px;" style="margin-left: 8px;">
                                 <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">千问</span></a></li> 
                                 
-
-
-                                <li class="sc-8081b5c5-0 lmlYtl"><a href="https://chatgpt.com/"  target="_blank"
+                                <li class="sc-8081b5c5-0 lmlYtl"><a href="https://metaso.cn/" target="_blank"
                                 class="_3BQD purpleBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 jWNmxS hYwcJg">
-                                <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/ChatGPT.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">ChatGPT</span></a></li> 
+                                <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/秘塔AI-copy.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">秘塔AI</span></a></li>
                                 
-                                
-                                <li class="sc-8081b5c5-0 lmlYtl"><a href="https://grok.com/"  target="_blank"
-                                class="_3BQD purpleBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 jWNmxS hYwcJg">
-                                <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/grok.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">Grok</span></a></li> 
-                               
-                                
-                                <li class="sc-8081b5c5-0 lmlYtl"><a href="https://gemini.google.com/app"  target="_blank"
-                                class="_3BQD purpleBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 jWNmxS hYwcJg">
-                                <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/gemini-ai.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">Gemini</span></a></li>
-                                
-                                <li class="sc-8081b5c5-0 lmlYtl"><a href="https://claude.ai/"  target="_blank"
-                                class="_3BQD purpleBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 jWNmxS hYwcJg">
-                                <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/Claude.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">Claude</span></a></li>
-                                
-                                <li class="sc-8081b5c5-0 lmlYtl"><a href="https://copilot.microsoft.com/"  target="_blank"
+                                <!-- <li class="sc-8081b5c5-0 lmlYtl"><a href="https://copilot.microsoft.com/"  target="_blank"
                                 class="_3BQD purpleBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 jWNmxS hYwcJg">
                                 <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/microsoft-copilot.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">Microsoft Copilot</span></a></li>
+                                <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">Microsoft Copilot</span></a></li> -->
 
-                                <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.perplexity.ai/"  target="_blank"
+                                <!-- <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.perplexity.ai/"  target="_blank"
                                 class="_3BQD purpleBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 jWNmxS hYwcJg">
                                 <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/perplexity-color.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">Perplexity</span></a></li>
+                                <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">Perplexity</span></a></li> -->
 
-                                <li class="sc-8081b5c5-0 lmlYtl"><a href="https://askmany.cn/"  target="_blank"
+                                <!-- <li class="sc-8081b5c5-0 lmlYtl"><a href="https://askmany.cn/"  target="_blank"
                                 class="_3BQD purpleBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 jWNmxS hYwcJg">
                                 <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/askmany.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">Askmany</span></a></li>
+                                <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">Askmany</span></a></li> -->
                                 
                             </ul>
                         </section>
@@ -3581,6 +3643,21 @@ function Ask_Search() {
                                         class="sc-ee0fc588-1 bvdIUc">外语</span><span aria-hidden="true"
                                         role="presentation"> ›</span></p></h2>
                             <ul class="sc-ee0fc588-2 nkpSK">
+
+                                <li class="sc-8081b5c5-0 lmlYtl"><a
+                                    href="https://www.mojidict.com/" target="_blank"
+                                    class="_3BQD greenBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 eYCCzK hYwcJg">
+                                    <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/moji.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                    <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">MOJi辞書</span></a>
+                                </li>
+
+                                <li class="sc-8081b5c5-0 lmlYtl"><a
+                                    href="http://shiri.jingqueyun.com/" target="_blank"
+                                    class="_3BQD greenBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 eYCCzK hYwcJg">
+                                    <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/shiri.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                    <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">识日</span></a>
+                                </li>
+
                                 <li class="sc-8081b5c5-0 lmlYtl"><a
                                         href="https://tw.amazingtalker.com/" target="_blank"
                                         class="_3BQD greenBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 eYCCzK hYwcJg">
@@ -3593,6 +3670,7 @@ function Ask_Search() {
                                         <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/A.png" alt="search" width="30" height="30" style="margin-left: 8px;">
                                         <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">AmazingTalker</span></a>
                                 </li>
+
                                 <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.lingohut.com/"  target="_blank"
                                         class="_3BQD greenBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 eYCCzK hYwcJg">
                                         <!-- <svg
@@ -3602,7 +3680,9 @@ function Ask_Search() {
                                             </path>
                                         </svg> -->
                                         <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/lh.png" alt="search" width="30" height="30" style="margin: 5px;" style="margin-left: 8px;">
-                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">LingoHut</span></a></li>
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">LingoHut</span></a>
+                                    </li>
+
                                 <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.loecsen.com/"  target="_blank"
                                         class="_3BQD greenBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 eYCCzK hYwcJg">
                                         <!-- <svg
@@ -3618,6 +3698,7 @@ function Ask_Search() {
                                         </svg> -->
                                         <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/loecsen.png" alt="search" width="30" height="30" style="margin: 5px;" style="margin-left: 8px;">
                                         <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">loecsen</span></a></li>
+
                                 <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.50languages.com/"  target="_blank"
                                         class="_3BQD greenBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 eYCCzK hYwcJg">
                                         <!-- <svg
@@ -3641,6 +3722,7 @@ function Ask_Search() {
                                         </svg> -->
                                         <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/50languages.webp" alt="search" width="30" height="30" style="margin-left: 8px;">
                                         <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">50languages</span></a></li>
+
                                 <li class="sc-8081b5c5-0 lmlYtl"><a
                                         href="https://www.englearner.site/cn/index.html"  target="_blank"
                                         class="_3BQD greenBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 eYCCzK hYwcJg">
@@ -3653,7 +3735,8 @@ function Ask_Search() {
                                         <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/englearner.site.png" alt="search" width="30" height="30" style="margin-left: 8px;">
                                         <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">englearner.site</span></a>
                                 </li>
-                                <li class="sc-8081b5c5-0 lmlYtl"><a
+
+                                        <li class="sc-8081b5c5-0 lmlYtl"><a
                                         href="https://www.duolingo.cn/"  target="_blank"
                                         class="_3BQD greenBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 eYCCzK hYwcJg">
                                         <!-- <svg
@@ -3664,109 +3747,36 @@ function Ask_Search() {
                                         </svg> -->
                                         <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/duolingo.png" alt="search" width="30" height="30" style="margin-left: 8px;">
                                         <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">多邻国</span></a></li>
-                                <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.hellotalk.com/"  target="_blank"
+
+                                        <!-- <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.hellotalk.com/"  target="_blank"
                                         class="_3BQD greenBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 eYCCzK hYwcJg">
-                                        <!-- <svg
-                                            class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                            <defs>
-                                                <path id="a" d="M0 0h31.007v23.003H0z"></path>
-                                            </defs>
-                                            <g fill="none" fill-rule="evenodd" transform="translate(8 12)">
-                                                <path class="mainColor" fill="#359D6E"
-                                                    d="M21.924 14.801l4.951-7.987-9.233 9.536 2.306-9.536c5.273-.745 6.927 0 6.927 0 1.795-.868 2.653.031 2.653.031l-7.604 7.956zm-6.42-8.863c-2.612.393-4.893.025-4.893.025s-4.19.368-6.779 0c0 0-1.21.294-1.547 0l3.693-4.049L7.065.724h16.879l1.084 1.19 3.693 4.05c-.335.293-1.546 0-1.546 0-2.589.367-6.779 0-6.779 0s-2.28.367-4.893-.026zm.013 15.594l-2.153-5.182-9.232-9.536 4.95 7.987L1.48 6.845s.857-.899 2.653-.03c0 0 1.654-.746 6.926 0l2.306 9.535 2.153-9.536v14.718zM28.14 3.625l-2.108-2.309L24.832 0H6.175L4.973 1.316 2.724 3.782 0 6.767l8.406 8.795 4.197 4.39 2.885 3.02v.031l.016-.016.016.016v-.032l1.832-1.918 5.251-5.49 8.405-8.796-2.867-3.142zm-7.75-1.15l-.159-.056-1.707 1.206h-.006l1.712-1.207L15.501.73l-4.726 1.688 1.713 1.208h-.004l-1.709-1.208-.164.058 4.892 3.46 4.893-3.46-.005-.002v.002zm.522-.539l-.17.121-.346.418 6.78 3.488-2.148-4.049-3.184-1.19-1.102 1.332.17-.12zm-10.647.121l-.17-.12.17.12L9.162.722 5.978 1.914l-2.146 4.05 6.78-3.489-.347-.418z">
-                                                </path>
-                                            </g>
-                                        </svg> -->
                                         <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/hellotalk.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">HelloTalk</span></a></li>
-                                <li class="sc-8081b5c5-0 lmlYtl"><a
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">HelloTalk</span></a></li> -->
+
+                                        <!-- <li class="sc-8081b5c5-0 lmlYtl"><a
                                         href="https://lingvist.io/"  target="_blank"
                                         class="_3BQD greenBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 eYCCzK hYwcJg">
-                                        <!-- <svg
-                                            class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                            <defs>
-                                                <path id="a" d="M.037.488h34.71V23H.037z"></path>
-                                            </defs>
-                                            <g fill="none" fill-rule="evenodd">
-                                                <g transform="translate(7 12.512)">
-                                                    <path class="mainColor" fill="#359D6E"
-                                                        d="M30.298 12.666c.247.335.31.716.135.853-.17.13-.513-.03-.76-.364-.248-.335-.308-.716-.136-.85.174-.136.512.026.761.36m-12.014-7.09c.175-.197.586-.101.924.213.337.315.47.729.296.927-.175.196-.588.102-.925-.211-.336-.316-.469-.731-.295-.93M33.861.498c-1.922.187-4.574.617-8.187 3.47-3.612 2.848-4.956 3.855-4.956 3.855l-1.484-.13s.657-.53.657-1.116c0-.585-.587-1.551-1.547-1.413-.959.137-2.386 1.792-2.386 1.792L2.054 3.282s-.493-.21-.795-.018C.956 3.454.037 4.469.037 4.469l12.653 7.135 1.283 1.28-3.884 3.098-1.66-1.436s-.392-.45-.83-.104c-.439.345-1.008.9-1.008.9l.238 2.564-4.678-.957s-.577-.175-.96.108c-.385.283-.709.623-.709.623l5.763 2.25s-.62.647-.472.785c.148.138 1.781-.18 1.781-.18L10.828 23s1.078-.611.684-1.147c-.397-.536-1.314-1.865-1.314-1.865s3.671-1.624 5.195-2.465c1.091-.6 3.796-2.282 3.796-2.282l1.411.038 8.861 6.38 1.445-1.246-2.76-4.806s2.26-1.405 2.493-1.855c.234-.452-.16-1.573-.85-1.743-.692-.168-2.656 1.513-2.656 1.513l-1.559-2.834s5.464-3.926 7.05-5.823C34.208 2.97 35.784.31 33.861.497">
-                                                    </path>
-                                                </g>
-                                                <path
-                                                    d="M10.59 18.984c.001.018-1.515.096-1.565 1.183-.015.313.175.596.46.8-.9.41-1.967.824-2.7.85-1.447.052-.718.313.76.313 1.48 0 5.161-.001 4.557.364h4.711l-6.224-3.51zm11.89-.653c-.027 0-.056.005-.082.006.052-.126.083-.264.083-.406 0-.612-.518-1.107-1.154-1.107-.142 0-.273.028-.4.071.034-.174.053-.355.053-.542 0-1.435-1.02-2.6-2.274-2.6-1.06 0-1.942.832-2.195 1.952a1.802 1.802 0 0 0-.29-.03c-.646 0-1.21.358-1.528.893a2.66 2.66 0 0 0-.228-.033l8.43 2.228s.112-.13.292-.319a2.242 2.242 0 0 0-.706-.113"
-                                                    fill="#359D6E"></path>
-                                            </g>
-                                        </svg> -->
                                         <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/lingvist.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">lingvist</span></a></li>
-                                       
-                                        <li class="sc-8081b5c5-0 lmlYtl"><a
-                                            href="https://www.busuu.com/"  target="_blank"
-                                            class="_3BQD greenBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 eYCCzK hYwcJg">
-                                            <!-- <svg
-                                                class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                                <defs>
-                                                    <path id="a" d="M.037.488h34.71V23H.037z"></path>
-                                                </defs>
-                                                <g fill="none" fill-rule="evenodd">
-                                                    <g transform="translate(7 12.512)">
-                                                        <path class="mainColor" fill="#359D6E"
-                                                            d="M30.298 12.666c.247.335.31.716.135.853-.17.13-.513-.03-.76-.364-.248-.335-.308-.716-.136-.85.174-.136.512.026.761.36m-12.014-7.09c.175-.197.586-.101.924.213.337.315.47.729.296.927-.175.196-.588.102-.925-.211-.336-.316-.469-.731-.295-.93M33.861.498c-1.922.187-4.574.617-8.187 3.47-3.612 2.848-4.956 3.855-4.956 3.855l-1.484-.13s.657-.53.657-1.116c0-.585-.587-1.551-1.547-1.413-.959.137-2.386 1.792-2.386 1.792L2.054 3.282s-.493-.21-.795-.018C.956 3.454.037 4.469.037 4.469l12.653 7.135 1.283 1.28-3.884 3.098-1.66-1.436s-.392-.45-.83-.104c-.439.345-1.008.9-1.008.9l.238 2.564-4.678-.957s-.577-.175-.96.108c-.385.283-.709.623-.709.623l5.763 2.25s-.62.647-.472.785c.148.138 1.781-.18 1.781-.18L10.828 23s1.078-.611.684-1.147c-.397-.536-1.314-1.865-1.314-1.865s3.671-1.624 5.195-2.465c1.091-.6 3.796-2.282 3.796-2.282l1.411.038 8.861 6.38 1.445-1.246-2.76-4.806s2.26-1.405 2.493-1.855c.234-.452-.16-1.573-.85-1.743-.692-.168-2.656 1.513-2.656 1.513l-1.559-2.834s5.464-3.926 7.05-5.823C34.208 2.97 35.784.31 33.861.497">
-                                                        </path>
-                                                    </g>
-                                                    <path
-                                                        d="M10.59 18.984c.001.018-1.515.096-1.565 1.183-.015.313.175.596.46.8-.9.41-1.967.824-2.7.85-1.447.052-.718.313.76.313 1.48 0 5.161-.001 4.557.364h4.711l-6.224-3.51zm11.89-.653c-.027 0-.056.005-.082.006.052-.126.083-.264.083-.406 0-.612-.518-1.107-1.154-1.107-.142 0-.273.028-.4.071.034-.174.053-.355.053-.542 0-1.435-1.02-2.6-2.274-2.6-1.06 0-1.942.832-2.195 1.952a1.802 1.802 0 0 0-.29-.03c-.646 0-1.21.358-1.528.893a2.66 2.66 0 0 0-.228-.033l8.43 2.228s.112-.13.292-.319a2.242 2.242 0 0 0-.706-.113"
-                                                        fill="#359D6E"></path>
-                                                </g>
-                                            </svg> -->
-                                            <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/busuu.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                            <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">busuu</span></a></li>
-                                           
-                                        <li class="sc-8081b5c5-0 lmlYtl"><a
-                                            href=" https://www.memrise.com/"  target="_blank"
-                                            class="_3BQD greenBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 eYCCzK hYwcJg">
-                                            <!-- <svg
-                                                class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                                <defs>
-                                                    <path id="a" d="M.037.488h34.71V23H.037z"></path>
-                                                </defs>
-                                                <g fill="none" fill-rule="evenodd">
-                                                    <g transform="translate(7 12.512)">
-                                                        <path class="mainColor" fill="#359D6E"
-                                                            d="M30.298 12.666c.247.335.31.716.135.853-.17.13-.513-.03-.76-.364-.248-.335-.308-.716-.136-.85.174-.136.512.026.761.36m-12.014-7.09c.175-.197.586-.101.924.213.337.315.47.729.296.927-.175.196-.588.102-.925-.211-.336-.316-.469-.731-.295-.93M33.861.498c-1.922.187-4.574.617-8.187 3.47-3.612 2.848-4.956 3.855-4.956 3.855l-1.484-.13s.657-.53.657-1.116c0-.585-.587-1.551-1.547-1.413-.959.137-2.386 1.792-2.386 1.792L2.054 3.282s-.493-.21-.795-.018C.956 3.454.037 4.469.037 4.469l12.653 7.135 1.283 1.28-3.884 3.098-1.66-1.436s-.392-.45-.83-.104c-.439.345-1.008.9-1.008.9l.238 2.564-4.678-.957s-.577-.175-.96.108c-.385.283-.709.623-.709.623l5.763 2.25s-.62.647-.472.785c.148.138 1.781-.18 1.781-.18L10.828 23s1.078-.611.684-1.147c-.397-.536-1.314-1.865-1.314-1.865s3.671-1.624 5.195-2.465c1.091-.6 3.796-2.282 3.796-2.282l1.411.038 8.861 6.38 1.445-1.246-2.76-4.806s2.26-1.405 2.493-1.855c.234-.452-.16-1.573-.85-1.743-.692-.168-2.656 1.513-2.656 1.513l-1.559-2.834s5.464-3.926 7.05-5.823C34.208 2.97 35.784.31 33.861.497">
-                                                        </path>
-                                                    </g>
-                                                    <path
-                                                        d="M10.59 18.984c.001.018-1.515.096-1.565 1.183-.015.313.175.596.46.8-.9.41-1.967.824-2.7.85-1.447.052-.718.313.76.313 1.48 0 5.161-.001 4.557.364h4.711l-6.224-3.51zm11.89-.653c-.027 0-.056.005-.082.006.052-.126.083-.264.083-.406 0-.612-.518-1.107-1.154-1.107-.142 0-.273.028-.4.071.034-.174.053-.355.053-.542 0-1.435-1.02-2.6-2.274-2.6-1.06 0-1.942.832-2.195 1.952a1.802 1.802 0 0 0-.29-.03c-.646 0-1.21.358-1.528.893a2.66 2.66 0 0 0-.228-.033l8.43 2.228s.112-.13.292-.319a2.242 2.242 0 0 0-.706-.113"
-                                                        fill="#359D6E"></path>
-                                                </g>
-                                            </svg> -->
-                                            <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/memrise.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                            <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">memrise</span></a></li>
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">lingvist</span></a></li> -->
+ 
+                                        <!--<li class="sc-8081b5c5-0 lmlYtl"><a
+                                        href="https://www.busuu.com/"  target="_blank"
+                                        class="_3BQD greenBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 eYCCzK hYwcJg">
+                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/busuu.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">busuu</span></a></li> -->
 
-                                        <li class="sc-8081b5c5-0 lmlYtl"><a
-                                            href="https://www.pimsleur.com/"  target="_blank"
-                                            class="_3BQD greenBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 eYCCzK hYwcJg">
-                                            <!-- <svg
-                                                class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                                <defs>
-                                                    <path id="a" d="M.037.488h34.71V23H.037z"></path>
-                                                </defs>
-                                                <g fill="none" fill-rule="evenodd">
-                                                    <g transform="translate(7 12.512)">
-                                                        <path class="mainColor" fill="#359D6E"
-                                                            d="M30.298 12.666c.247.335.31.716.135.853-.17.13-.513-.03-.76-.364-.248-.335-.308-.716-.136-.85.174-.136.512.026.761.36m-12.014-7.09c.175-.197.586-.101.924.213.337.315.47.729.296.927-.175.196-.588.102-.925-.211-.336-.316-.469-.731-.295-.93M33.861.498c-1.922.187-4.574.617-8.187 3.47-3.612 2.848-4.956 3.855-4.956 3.855l-1.484-.13s.657-.53.657-1.116c0-.585-.587-1.551-1.547-1.413-.959.137-2.386 1.792-2.386 1.792L2.054 3.282s-.493-.21-.795-.018C.956 3.454.037 4.469.037 4.469l12.653 7.135 1.283 1.28-3.884 3.098-1.66-1.436s-.392-.45-.83-.104c-.439.345-1.008.9-1.008.9l.238 2.564-4.678-.957s-.577-.175-.96.108c-.385.283-.709.623-.709.623l5.763 2.25s-.62.647-.472.785c.148.138 1.781-.18 1.781-.18L10.828 23s1.078-.611.684-1.147c-.397-.536-1.314-1.865-1.314-1.865s3.671-1.624 5.195-2.465c1.091-.6 3.796-2.282 3.796-2.282l1.411.038 8.861 6.38 1.445-1.246-2.76-4.806s2.26-1.405 2.493-1.855c.234-.452-.16-1.573-.85-1.743-.692-.168-2.656 1.513-2.656 1.513l-1.559-2.834s5.464-3.926 7.05-5.823C34.208 2.97 35.784.31 33.861.497">
-                                                        </path>
-                                                    </g>
-                                                    <path
-                                                        d="M10.59 18.984c.001.018-1.515.096-1.565 1.183-.015.313.175.596.46.8-.9.41-1.967.824-2.7.85-1.447.052-.718.313.76.313 1.48 0 5.161-.001 4.557.364h4.711l-6.224-3.51zm11.89-.653c-.027 0-.056.005-.082.006.052-.126.083-.264.083-.406 0-.612-.518-1.107-1.154-1.107-.142 0-.273.028-.4.071.034-.174.053-.355.053-.542 0-1.435-1.02-2.6-2.274-2.6-1.06 0-1.942.832-2.195 1.952a1.802 1.802 0 0 0-.29-.03c-.646 0-1.21.358-1.528.893a2.66 2.66 0 0 0-.228-.033l8.43 2.228s.112-.13.292-.319a2.242 2.242 0 0 0-.706-.113"
-                                                        fill="#359D6E"></path>
-                                                </g>
-                                            </svg> -->
-                                            <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/pimsleur.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                            <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">pimsleur</span></a></li>
-                                               
+                                        <!-- <li class="sc-8081b5c5-0 lmlYtl"><a
+                                        href=" https://www.memrise.com/"  target="_blank"
+                                        class="_3BQD greenBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 eYCCzK hYwcJg">
+                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/memrise.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">memrise</span></a></li> -->
+
+                                        <!-- <li class="sc-8081b5c5-0 lmlYtl"><a
+                                        href="https://www.pimsleur.com/"  target="_blank"
+                                        class="_3BQD greenBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 eYCCzK hYwcJg">
+                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/pimsleur.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">pimsleur</span></a></li> -->
+
                                 <!-- <li class="sc-8081b5c5-0 lmlYtl"><a href="/examples/science-and-technology"
                                         class="_3BQD greenColoredBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 leBERC hYwcJg"><svg
                                             class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
@@ -3785,6 +3795,20 @@ function Ask_Search() {
                                         class="sc-ee0fc588-1 bvdIUc">图片</span><span aria-hidden="true"
                                         role="presentation"> ›</span></p></h2>
                             <ul class="sc-ee0fc588-2 nkpSK">
+
+                                <li class="sc-8081b5c5-0 lmlYtl"><a
+                                        href="https://unsplash.com/t/wallpapers	"  target="_blank"
+                                        class="_3BQD redBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 iRjKEa hYwcJg">
+                                        <!-- <svg
+                                            class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
+                                            <path class="mainColor" fill="#9371B5" fill-rule="evenodd"
+                                                d="M28.598 28.143c-.572.607-1.404.978-2.497 1.112v1.317h-.916v-1.286c-.862-.041-1.567-.226-2.117-.557-.549-.328-.822-.713-.822-1.154a.92.92 0 0 1 .231-.61c.154-.184.38-.277.679-.277.421 0 .744.237.967.707.272.572.625.898 1.062.98v-3.538c-1.177-.486-1.944-1-2.301-1.539-.357-.539-.535-1.084-.535-1.633 0-.665.236-1.272.712-1.82.473-.55 1.181-.884 2.124-1.004v-1.153h.916v1.114c.773 0 1.463.197 2.067.592.604.395.906.84.906 1.337a.843.843 0 0 1-.267.631.848.848 0 0 1-.599.256c-.44 0-.792-.363-1.057-1.088-.174-.489-.525-.779-1.05-.872v2.947c1.341.541 2.236 1.082 2.684 1.626.447.544.671 1.159.671 1.843 0 .772-.287 1.462-.858 2.069m-16.252-4.845c-.771-.042-.594-.193-.594-.193s.331-1.095.857-1.052c0 0 .507 1.288-.263 1.245M39.15 20.41s1.46-.319.507-1.851c-.602-.963-1.936-.857-2.315-.504.232.131.443.286.654.417.161.106.324.209.486.295.079.042.164.082.232.098.033.007.051 0 .037.008-.008.016.01-.001.014-.04.024-.112-.099-.274-.244-.372a1.053 1.053 0 0 0-.531-.188.992.992 0 0 1 .605.059c.181.091.401.229.41.517-.002.056-.004.142-.089.221-.093.073-.186.06-.247.056-.126-.02-.221-.062-.319-.104a4.715 4.715 0 0 1-.526-.299c-.338-.218-.624-.472-.957-.63a1.307 1.307 0 0 0-.521-.146.648.648 0 0 0-.191.021c-2.235-1.782-5.522-2.77-9.361-2.559-7.049.388-9.412 2.849-9.597 3.053l.004.006-.165.161c-.251.251-.822-.468-1.184-.847-.322-.341-.891-.739-1.004-.817a.337.337 0 0 1-.019.008c-.63-.348-1.285-.348-1.898.037-.612.387.356 2.665.356 2.665-1.502.27-2.53 2.509-3.044 3.108-.514.596-1.167.52-1.601.5-.437-.018-1.623-.5-1.642 1.372v.077c0 .386.037.712.096.985.215 1.001.714 1.291.714 1.291-.177.059-.04.291.178.407.217.115 1.582 1.041 1.582 1.041 4.568 3.07 6.011 2.354 6.011 2.354 0 .349.296.234.59 1.448.291 1.217.419 3.878.419 3.878s-1.482.752 1.127.811c2.61.057 1.542-.116 2.255-.58.712-.463 2.135-3.761 2.135-3.761 4.331 1.041 8.01-.059 8.01-.059.592.406.948.232.948.232.119.58.534 1.507.534 1.507 0 1.737.06 2.414.06 2.414.536.579 2.966 0 2.966 0v-.289c0-.29.357-.869.357-.869 1.423-2.142 1.186-3.109 1.186-3.109.158-2.48 2.299-2.379 2.928-6.275.077-.471.131-1.001.156-1.6a7.639 7.639 0 0 0-1.05-4.266c.295.118.613.172.948.118m-13.049 4.856v3.126c.438-.062.792-.219 1.059-.471.267-.251.401-.576.401-.975a1.5 1.5 0 0 0-.238-.806c-.16-.251-.567-.543-1.222-.874m-1.983-4.411c0 .591.356 1.049 1.067 1.37v-2.551c-.711.15-1.067.544-1.067 1.181m-7.056-2.678l.145-.143s-1.03-1.704-2.115-1.352c0 0 .596.403.915.741.322.337.831.977 1.055.754m8.973-11.704c1.774 0 3.218 1.409 3.218 3.141 0 1.733-1.444 3.142-3.218 3.142-1.776 0-3.219-1.409-3.219-3.142 0-1.732 1.443-3.141 3.219-3.141m0 6.721c2.034 0 3.684-1.611 3.684-3.596 0-1.987-1.65-3.598-3.684-3.598C24 6 22.35 7.611 22.35 9.598c0 1.985 1.65 3.596 3.685 3.596m-1.6-4.739c.008-.041.01-.072.024-.119a.915.915 0 0 1 .342-.462c.291-.214.611-.313.947-.374l-.012.003c.27-.059.56-.043.804.059.237.093.499.215.634.482.068.143.049.277.056.389l.002.359c.011.237-.007.482.05.712-.106-.22-.121-.468-.166-.702l-.053-.358c-.02-.123-.018-.24-.068-.314-.097-.166-.32-.264-.538-.325a1.205 1.205 0 0 0-.641-.012l.016-.005-.031.007c-.28.064-.58.171-.793.335a.636.636 0 0 0-.215.275c-.009.027-.014.073-.023.109-.002.005-.005.065-.008.095a1.877 1.877 0 0 0-.001.212.583.583 0 0 0 .03.176c.011.022.015.03.03.045l.029.031a.243.243 0 0 1 .039.063c.015.047.005.024.01.037.004.086-.003.075-.005.107a2.74 2.74 0 0 1-.1.433.26.26 0 0 1 .176.08c.07.086.062.151.065.204-.016.113.012.254.029.39a.568.568 0 0 0 .146.048c.06.018.14.005.235-.001a.609.609 0 0 1 .162.006c.064.006.152.079.165.15.022.137-.015.209-.039.299a4.175 4.175 0 0 1-.194.491c-.076.158-.159.321-.296.435.109-.135.16-.303.215-.465.05-.163.09-.331.119-.498.014-.075.03-.177.016-.21.004-.014-.034-.018-.127-.004-.08.01-.178.037-.294.019-.095-.017-.189-.018-.316-.111l-.029-.021-.007-.046c-.027-.154-.081-.295-.075-.475h-.001c-.049-.009-.117.008-.215-.077-.103-.113-.052-.226-.044-.261.038-.126.061-.283.082-.42a.423.423 0 0 1-.081-.125.85.85 0 0 1-.06-.278 2.112 2.112 0 0 1-.003-.251c.004-.047 0-.067.012-.137m1.6 4.134c1.68 0 3.047-1.334 3.047-2.975 0-1.639-1.367-2.974-3.047-2.974-1.681 0-3.048 1.335-3.048 2.974 0 1.641 1.367 2.975 3.048 2.975">
+                                            </path>
+                                        </svg> -->
+                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/unsplash.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">unsplash</span></a>
+                                </li>
+
                                 <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.nbfox.com/"  target="_blank"
                                         class="_3BQD redBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 iRjKEa hYwcJg">
                                         <!-- <svg
@@ -3810,51 +3834,18 @@ function Ask_Search() {
                                         </svg> -->
                                         <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/peace.png" alt="search" width="30" height="30" style="margin-left: 8px;">
                                         <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">gallerix</span></a></li>
-                                <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.artic.edu/collection	"  target="_blank"
+
+                                <!-- <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.artic.edu/collection	"  target="_blank"
                                         class="_3BQD redBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 iRjKEa hYwcJg">
-                                        <!-- <svg
-                                            class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                            <defs>
-                                                <path id="a" d="M0 0h25v28H0z"></path>
-                                            </defs>
-                                            <g fill="none" fill-rule="evenodd" transform="translate(12 10)">
-                                                <path class="mainColor" fill="#9371B5"
-                                                    d="M15.842 17.226c.876 0 1.454-.697 1.454-1.529 0-.852-.578-1.549-1.454-1.549s-1.454.697-1.454 1.55c0 .831.578 1.528 1.454 1.528zM4.88 14.052a.32.32 0 0 1 .13-.272l2.127-1.587a.507.507 0 0 1 .335-.116H9.56c.112 0 .186.078.186.194v12.775c0 .116-.074.194-.186.194H7.322c-.111 0-.185-.078-.185-.194v-9.91h-.038l-2.013 1.432c-.112.077-.206.038-.206-.116v-2.4zm6.953 1.645c0-2.033 1.436-3.833 4.009-3.833 2.573 0 4.008 1.8 4.008 3.833 0 1.238-.633 2.187-1.231 2.633v.038c.802.562 1.51 1.607 1.51 3.078 0 2.42-1.826 4.007-4.287 4.007s-4.288-1.588-4.288-4.007c0-1.47.708-2.516 1.51-3.078v-.038c-.597-.446-1.231-1.395-1.231-2.633zM0 26.872C0 27.496.487 28 1.087 28h22.822c.603 0 1.087-.504 1.087-1.128L25 10H.004L0 26.872zm15.842-3.704c1.025 0 1.715-.755 1.715-1.838 0-1.065-.69-1.82-1.715-1.82-1.025 0-1.715.755-1.715 1.82 0 1.083.69 1.838 1.715 1.838zM12.62 5.828l-.33 1.054h.67l-.327-1.055h-.013zm8.215-2.19c0 .132-.012.24-.017.362H21c0 .011-.165-.374-.165-.362zm-.312 3.64a.888.888 0 0 0 .604-.254.704.704 0 0 1-.676.551.706.706 0 0 1-.69-.64c-.01-.036-.022-.07-.022-.108 0-.075.02-.142.05-.203a.702.702 0 0 1 .583-.492c.188-.345.402-1.072.446-2.132H20c.006-1.735.348-3.045.53-3.1.168.056.652.981.652 2.738 0 1.757-.484 2.683-.667 2.738a.44.44 0 0 0-.43.451c0 .248.197.45.438.45zm-5.14-.472v1.157c0 .026-.016.044-.042.044H14.8c-.026 0-.043-.018-.043-.044V6.806L13.9 5.038c-.01-.022 0-.044.03-.044h.555c.03 0 .05.013.063.044l.525 1.1h.013l.526-1.1c.012-.03.034-.044.063-.044h.538c.03 0 .043.022.03.044l-.858 1.768zM13.91 8.007h-.555c-.03 0-.046-.013-.055-.044l-.167-.528h-1.016l-.162.528c-.01.031-.025.044-.055.044h-.56c-.03 0-.038-.018-.03-.044l1-2.925c.008-.026.025-.044.055-.044h.538c.03 0 .046.018.055.044l.982 2.925c.008.026 0 .044-.03.044zm-3.041-.044c0 .026-.017.044-.043.044h-.482c-.025 0-.043-.018-.043-.044V6.266h-.017l-.538 1.272c-.016.04-.043.057-.081.057H9.37c-.04 0-.064-.018-.081-.057l-.538-1.272h-.017v1.697c0 .026-.017.044-.042.044H8.21c-.025 0-.043-.018-.043-.044V5.038c0-.026.018-.044.043-.044h.508c.034 0 .056.013.068.044l.735 1.72h.016l.722-1.72a.066.066 0 0 1 .067-.044h.5c.026 0 .043.018.043.044v2.925zM5.205 6.934a.706.706 0 0 1-.69.641.702.702 0 0 1-.676-.55.885.885 0 0 0 .604.252.446.446 0 0 0 .437-.45.44.44 0 0 0-.43-.45c-.183-.056-.674-.654-.674-2.41 0-1.758.49-3.01.66-3.067.182.055.562 1.365.567 3.1h-1c0 .011-.004-.047-.004-.036 0 1.275.385 1.783.595 2.168a.702.702 0 0 1 .582.492.469.469 0 0 1 .05.203c0 .038-.012.072-.021.107zM24 4h-2c-.005-1.743-.433-4-1.476-4S19.007 2.257 19 4H6.003c-.006-1.743-.517-4-1.56-4C3.4 0 3.009 2.257 3.003 4h-2c-.6 0-1 .38-1 1v4H25V5c0-.62-.398-1-1-1z">
-                                                </path>
-                                            </g>
-                                        </svg> -->
                                         <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/芝加哥.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">芝加哥艺术博物馆</span></a></li>
-                                <li class="sc-8081b5c5-0 lmlYtl"><a
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">芝加哥艺术博物馆</span></a></li> -->
+                                
+                                        <!-- <li class="sc-8081b5c5-0 lmlYtl"><a
                                         href="https://www.europeana.eu/en"  target="_blank"
                                         class="_3BQD redBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 iRjKEa hYwcJg">
-                                        <!-- <svg
-                                            class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                            <defs>
-                                                <path id="a" d="M0 0h34.83v28.854H0z"></path>
-                                            </defs>
-                                            <g fill="none" fill-rule="evenodd" transform="translate(7 10)">
-                                                <path class="mainColor" fill="#9371B5"
-                                                    d="M18.463 0l-1.82 7.094c-.256 1.162-.486 2.274-.767 3.41h-.102a212.135 212.135 0 0 0-.873-3.41L12.954 0h-2.051L8.982 7.094c-.308 1.137-.564 2.274-.846 3.41h-.103a94.109 94.109 0 0 0-.742-3.41L5.444 0H3.293l3.459 12.271h2.46l1.743-6.564c.332-1.162.589-2.323.87-3.56h.105c.306 1.237.536 2.374.845 3.535l1.792 6.59h2.565L20.462 0h-2zm14.169 18.724c-.875 0-1.617.556-2.375 1.36-.296-.848-.892-1.36-1.99-1.36-.861 0-1.617.526-2.242 1.2h-.044l-.104-1.025h-1.01v7.11h1.218v-5.15c.668-.73 1.276-1.097 1.81-1.097.922 0 1.352.571 1.352 1.901v4.345h1.218V20.86c.668-.73 1.247-1.097 1.81-1.097.908 0 1.338.571 1.338 1.901v4.345h1.217v-4.506c0-1.813-.713-2.778-2.198-2.778zM4.234 15.171c-1.176 0-2.038.623-2.846 1.384l.053-1.73v-3.358H0v12.324h1.44v-6.093C2.303 16.85 2.9 16.4 3.779 16.4c1.124 0 1.616.675 1.616 2.25v5.141h1.44V18.46c0-2.145-.807-3.288-2.6-3.288zm8.452 12.66c-1.607 0-2.574-.594-2.574-1.529 0-.504.274-1.025.913-1.474.382.108.8.143 1.149.143h1.53c1.152 0 1.79.27 1.79 1.08 0 .915-1.112 1.78-2.808 1.78zm-.221-10.875c1.04 0 1.88.755 1.88 2.031 0 1.277-.858 2.084-1.88 2.084-1.022 0-1.88-.807-1.88-2.084 0-1.276.84-2.03 1.88-2.03zm1.388 6.794h-1.716c-1.203 0-1.57-.396-1.57-.953 0-.485.257-.773.567-1.042.4.197.893.306 1.33.306 1.808 0 3.249-1.169 3.249-3.039 0-.735-.311-1.4-.73-1.796h1.825v-1.133h-3.083a3.587 3.587 0 0 0-1.26-.216c-1.806 0-3.338 1.205-3.338 3.11 0 1.042.565 1.887 1.148 2.354v.073c-.456.304-.965.88-.965 1.617 0 .683.346 1.15.785 1.42v.071c-.804.54-1.296 1.241-1.296 1.977 0 1.51 1.496 2.355 3.666 2.355 2.756 0 4.488-1.402 4.488-3.019 0-1.456-1.04-2.085-3.1-2.085zm7.945-6.329c-.44 0-1.028-.189-1.632-.688V13.29c.658-.58 1.22-.892 1.782-.892 1.26 0 1.754.973 1.754 2.418 0 1.62-.808 2.605-1.904 2.605zm.438-5.954c-.781 0-1.522.42-2.125.918h-.041l-.095-.756h-.933v9.33h1.124v-2.215l-.027-1.147c.616.471 1.233.755 1.85.755 1.522 0 2.878-1.309 2.878-3.536 0-2.04-.918-3.349-2.631-3.349zm3.246-1.988c1.018 0 2.002-.415 2.777-1.09l-.651-.936c-.51.451-1.195.85-2.003.85-1.564 0-2.635-1.3-2.635-3.22 0-1.94 1.124-3.255 2.67-3.255.686 0 1.213.312 1.72.745l.722-.918c-.58-.535-1.37-1.004-2.494-1.004-2.196 0-4.112 1.61-4.112 4.431 0 2.787 1.74 4.397 4.006 4.397zm-3.296 17.858c-.553.486-1.011.753-1.564.753-.563 0-1-.267-1-.903 0-.719.649-1.182 2.564-1.414v1.564zm-1.023-4.39c-.917 0-1.716.395-2.246.73l.389.66c.446-.3 1.034-.602 1.704-.602.929 0 1.176.695 1.176 1.412-2.434.268-3.516.881-3.516 2.11 0 1.007.718 1.597 1.683 1.597.704 0 1.339-.37 1.892-.81h.023l.083.671h.799v-3.45c0-1.403-.588-2.318-1.987-2.318zM31.44 12.09v3.271c-.524.58-1.034.863-1.622.863-1.11 0-1.752-.902-1.752-2.395 0-1.43.812-2.396 1.83-2.396.524 0 1.007.18 1.544.657zm-4.484 1.751c0 2.087 1.032 3.27 2.628 3.27.745 0 1.424-.41 1.92-.887h.04l.092.734h.889V7.79H31.44v2.407l.052 1.07c-.562-.452-1.047-.722-1.777-.722-1.452 0-2.76 1.262-2.76 3.296z">
-                                                </path>
-                                            </g>
-                                        </svg> -->
                                         <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/ouzhou_logo.png" alt="search" width="30" height="30" style="margin-left: 8px;">
                                         <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">欧洲数字文化遗产</span></a>
-                                </li>
-                                
-                                <li class="sc-8081b5c5-0 lmlYtl"><a
-                                        href="https://unsplash.com/t/wallpapers	"  target="_blank"
-                                        class="_3BQD redBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 iRjKEa hYwcJg">
-                                        <!-- <svg
-                                            class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                            <path class="mainColor" fill="#9371B5" fill-rule="evenodd"
-                                                d="M28.598 28.143c-.572.607-1.404.978-2.497 1.112v1.317h-.916v-1.286c-.862-.041-1.567-.226-2.117-.557-.549-.328-.822-.713-.822-1.154a.92.92 0 0 1 .231-.61c.154-.184.38-.277.679-.277.421 0 .744.237.967.707.272.572.625.898 1.062.98v-3.538c-1.177-.486-1.944-1-2.301-1.539-.357-.539-.535-1.084-.535-1.633 0-.665.236-1.272.712-1.82.473-.55 1.181-.884 2.124-1.004v-1.153h.916v1.114c.773 0 1.463.197 2.067.592.604.395.906.84.906 1.337a.843.843 0 0 1-.267.631.848.848 0 0 1-.599.256c-.44 0-.792-.363-1.057-1.088-.174-.489-.525-.779-1.05-.872v2.947c1.341.541 2.236 1.082 2.684 1.626.447.544.671 1.159.671 1.843 0 .772-.287 1.462-.858 2.069m-16.252-4.845c-.771-.042-.594-.193-.594-.193s.331-1.095.857-1.052c0 0 .507 1.288-.263 1.245M39.15 20.41s1.46-.319.507-1.851c-.602-.963-1.936-.857-2.315-.504.232.131.443.286.654.417.161.106.324.209.486.295.079.042.164.082.232.098.033.007.051 0 .037.008-.008.016.01-.001.014-.04.024-.112-.099-.274-.244-.372a1.053 1.053 0 0 0-.531-.188.992.992 0 0 1 .605.059c.181.091.401.229.41.517-.002.056-.004.142-.089.221-.093.073-.186.06-.247.056-.126-.02-.221-.062-.319-.104a4.715 4.715 0 0 1-.526-.299c-.338-.218-.624-.472-.957-.63a1.307 1.307 0 0 0-.521-.146.648.648 0 0 0-.191.021c-2.235-1.782-5.522-2.77-9.361-2.559-7.049.388-9.412 2.849-9.597 3.053l.004.006-.165.161c-.251.251-.822-.468-1.184-.847-.322-.341-.891-.739-1.004-.817a.337.337 0 0 1-.019.008c-.63-.348-1.285-.348-1.898.037-.612.387.356 2.665.356 2.665-1.502.27-2.53 2.509-3.044 3.108-.514.596-1.167.52-1.601.5-.437-.018-1.623-.5-1.642 1.372v.077c0 .386.037.712.096.985.215 1.001.714 1.291.714 1.291-.177.059-.04.291.178.407.217.115 1.582 1.041 1.582 1.041 4.568 3.07 6.011 2.354 6.011 2.354 0 .349.296.234.59 1.448.291 1.217.419 3.878.419 3.878s-1.482.752 1.127.811c2.61.057 1.542-.116 2.255-.58.712-.463 2.135-3.761 2.135-3.761 4.331 1.041 8.01-.059 8.01-.059.592.406.948.232.948.232.119.58.534 1.507.534 1.507 0 1.737.06 2.414.06 2.414.536.579 2.966 0 2.966 0v-.289c0-.29.357-.869.357-.869 1.423-2.142 1.186-3.109 1.186-3.109.158-2.48 2.299-2.379 2.928-6.275.077-.471.131-1.001.156-1.6a7.639 7.639 0 0 0-1.05-4.266c.295.118.613.172.948.118m-13.049 4.856v3.126c.438-.062.792-.219 1.059-.471.267-.251.401-.576.401-.975a1.5 1.5 0 0 0-.238-.806c-.16-.251-.567-.543-1.222-.874m-1.983-4.411c0 .591.356 1.049 1.067 1.37v-2.551c-.711.15-1.067.544-1.067 1.181m-7.056-2.678l.145-.143s-1.03-1.704-2.115-1.352c0 0 .596.403.915.741.322.337.831.977 1.055.754m8.973-11.704c1.774 0 3.218 1.409 3.218 3.141 0 1.733-1.444 3.142-3.218 3.142-1.776 0-3.219-1.409-3.219-3.142 0-1.732 1.443-3.141 3.219-3.141m0 6.721c2.034 0 3.684-1.611 3.684-3.596 0-1.987-1.65-3.598-3.684-3.598C24 6 22.35 7.611 22.35 9.598c0 1.985 1.65 3.596 3.685 3.596m-1.6-4.739c.008-.041.01-.072.024-.119a.915.915 0 0 1 .342-.462c.291-.214.611-.313.947-.374l-.012.003c.27-.059.56-.043.804.059.237.093.499.215.634.482.068.143.049.277.056.389l.002.359c.011.237-.007.482.05.712-.106-.22-.121-.468-.166-.702l-.053-.358c-.02-.123-.018-.24-.068-.314-.097-.166-.32-.264-.538-.325a1.205 1.205 0 0 0-.641-.012l.016-.005-.031.007c-.28.064-.58.171-.793.335a.636.636 0 0 0-.215.275c-.009.027-.014.073-.023.109-.002.005-.005.065-.008.095a1.877 1.877 0 0 0-.001.212.583.583 0 0 0 .03.176c.011.022.015.03.03.045l.029.031a.243.243 0 0 1 .039.063c.015.047.005.024.01.037.004.086-.003.075-.005.107a2.74 2.74 0 0 1-.1.433.26.26 0 0 1 .176.08c.07.086.062.151.065.204-.016.113.012.254.029.39a.568.568 0 0 0 .146.048c.06.018.14.005.235-.001a.609.609 0 0 1 .162.006c.064.006.152.079.165.15.022.137-.015.209-.039.299a4.175 4.175 0 0 1-.194.491c-.076.158-.159.321-.296.435.109-.135.16-.303.215-.465.05-.163.09-.331.119-.498.014-.075.03-.177.016-.21.004-.014-.034-.018-.127-.004-.08.01-.178.037-.294.019-.095-.017-.189-.018-.316-.111l-.029-.021-.007-.046c-.027-.154-.081-.295-.075-.475h-.001c-.049-.009-.117.008-.215-.077-.103-.113-.052-.226-.044-.261.038-.126.061-.283.082-.42a.423.423 0 0 1-.081-.125.85.85 0 0 1-.06-.278 2.112 2.112 0 0 1-.003-.251c.004-.047 0-.067.012-.137m1.6 4.134c1.68 0 3.047-1.334 3.047-2.975 0-1.639-1.367-2.974-3.047-2.974-1.681 0-3.048 1.335-3.048 2.974 0 1.641 1.367 2.975 3.048 2.975">
-                                            </path>
-                                        </svg> -->
-                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/unsplash.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">unsplash</span></a>
-                                </li>
+                                </li> -->
                                 
                                 <li class="sc-8081b5c5-0 lmlYtl"><a
                                         href="https://www.pexels.com/"  target="_blank"
@@ -3885,21 +3876,11 @@ function Ask_Search() {
                                         <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/pixabay.png" alt="search" width="30" height="30" style="margin-left: 8px;">
                                         <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">pixabay</span></a>
                                 </li>
-                                <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.gettyimages.com/"  target="_blank"
+
+                                <!-- <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.gettyimages.com/"  target="_blank"
                                         class="_3BQD redBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 iRjKEa hYwcJg">
-                                        <!-- <svg
-                                            class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                            <defs>
-                                                <path id="a" d="M0 0h25v20H0z"></path>
-                                            </defs>
-                                            <g fill="none" fill-rule="evenodd" transform="translate(12 14)">
-                                                <path class="mainColor" fill="#9371B5"
-                                                    d="M12 18V3C10.331.347 4.424-.001 2 0v15c2.476.042 7.695-.045 10 3zm11-3V0c-2.424-.001-8.331.347-10 3v15c2.305-3.045 7.524-2.958 10-3zm1-14v15l-11 2.78h-1L1 16V1H0v16l12 3h1l12-3V1h-1z">
-                                                </path>
-                                            </g>
-                                        </svg> -->
                                         <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/gettyimages.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">gettyimages</span></a></li>
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">gettyimages</span></a></li> -->
 
                                         <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.pinterest.com/"  target="_blank"
                                             class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
@@ -3928,7 +3909,7 @@ function Ask_Search() {
                                             </svg> -->
                                             <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/stocksnap.png" alt="search" width="30" height="30" style="margin-left: 8px;">
                                             <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">stocksnap</span></a></li>
-                                       
+
                                         <li class="sc-8081b5c5-0 lmlYtl"><a href="https://500px.com"  target="_blank"
                                             class="_3BQD redBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 iRjKEa hYwcJg">
                                             <!-- <svg
@@ -3945,7 +3926,7 @@ function Ask_Search() {
                                             <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/500px.png" alt="search" width="30" height="30" style="margin-left: 8px;">
                                             <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">500px</span></a></li>
                                             
-                                         <!-- <li class="sc-8081b5c5-0 lmlYtl"><a href="/examples/society-and-culture"
+                                        <!-- <li class="sc-8081b5c5-0 lmlYtl"><a href="/examples/society-and-culture"
                                         class="_3BQD redColoredBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 hIlekW hYwcJg"><svg
                                             class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
                                             <g fill="none" fill-rule="evenodd">
@@ -3963,10 +3944,70 @@ function Ask_Search() {
                                         class="sc-ee0fc588-1 bvdIUc">娱乐</span><span aria-hidden="true"
                                         role="presentation"> ›</span></p></h2>
                             <ul class="sc-ee0fc588-2 nkpSK">
-                               
-                                                                       <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.bilibili.com/"  target="_blank"
+
+                                        <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.xiaohongshu.com/explore"  target="_blank"
                                         class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
-                                        <!-- <svg
+                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/小红书.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">小红书</span></a></li>
+
+                                        <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.youtube.com/"  target="_blank"
+                                        class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
+                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/youtube.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">youtube</span></a></li>
+
+                                        <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.bilibili.com/"  target="_blank"
+                                        class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
+                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/bilibili.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">B站</span></a></li>
+
+                                        <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.douyin.com/"  target="_blank"
+                                        class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
+                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/抖音.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">抖音</span></a></li>
+                                        
+                                        <!-- <li class="sc-8081b5c5-0 lmlYtl"><a href="https://x.com/"  target="_blank"
+                                        class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
+                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/X.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">X.com</span></a></li> -->
+
+                                        <!-- <li class="sc-8081b5c5-0 lmlYtl"><a href="https://music.163.com/"  target="_blank"
+                                        class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
+                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/网易云音乐.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;" >网易云音乐</span></a></li> -->
+                                        
+                                        <li class="sc-8081b5c5-0 lmlYtl"><a href="https://radio.garden/"  target="_blank"
+                                        class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
+                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/radio.garden.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">radio.garden</span></a></li>
+
+                                        <li class="sc-8081b5c5-0 lmlYtl"><a href="https://tv.garden/"  target="_blank"
+                                        class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
+                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/tv.garden.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">tv.garden</span></a></li>
+                                        
+                                        <!-- <li class="sc-8081b5c5-0 lmlYtl"><a href="https://app.radiooooo.com/"  target="_blank"
+                                        class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
+                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/musical.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">radiooooo</span></a></li> -->
+                                
+                                        <li class="sc-8081b5c5-0 lmlYtl"><a href="https://drivenlisten.com/globe/"  target="_blank"
+                                        class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
+                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/行车记录仪.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">drivenlisten</span></a></li>
+                                    
+                                        <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.earthcam.com/"  target="_blank"
+                                        class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
+                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/earthcam.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">Earthcam</span></a></li>
+
+                                        <!-- <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.google.com/streetview/"  target="_blank"
+                                        class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
+                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/谷歌地图.png" alt="search" width="30" height="30" style="margin-left: 8px;">
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">Google Streetview</span></a></li> -->
+
+                                        <!-- <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.bilibili.com/"  target="_blank"
+                                        class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
+                                        <svg
                                             class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
                                             <defs>
                                                 <path id="a" d="M0 0h36v26.754H0z"></path>
@@ -3976,201 +4017,11 @@ function Ask_Search() {
                                                     d="M26.2 12.838c0-.4.1-.8.4-1 .5-.4 1.3 0 1.7.4.8.7 1.2 1.8 1.2 2.8 0 .7-.3 1.5-1.1 1.5-1.6 0-2.3-2.4-2.2-3.7zm-2.1 3c1.3 1.7 4.1 1.9 6 1.2 1.1-.4 2.2-1.3 2.5-2.5.3-1.3-.6-2.5-1.7-3.1-1.8-1-4.2-1-5.9.2-.9.7-1.6 1.8-1.4 3 0 .5.2.9.5 1.2zm-6.1-3s0-.1 0 0c.2-.3.6-.5.9-.5.9-.1 1 1 .8 1.6-.2.8-.5 1.4-1 2-.1.2-.7.8-.7.8v-3.9zm-.8-7.5v12.5l.1-.1c.9-.7 1.7-1.4 2.5-2.2.8-.7 2.1-1.9 1.7-3.1-.2-.6-.7-1-1.4-1.1-.8-.1-2 .7-2.3 1v-7.1c.1.1-.6.1-.6.1zm-6.6 14.1s-.7-5-.8-5c.5-.1.9.1 1.1.2.4.1.7.4.9.8.4.6.4 1.2.4 1.9-.1.9-.6 1.9-1.6 2.1zm-3.4-.1c-1.7-.5-3-2-2.8-3.9.1-1 .6-1.9 1.2-2.7.4-.5.9-1 1.3-1.5l.7-.7c.1-.1.7-.5.7-.4.1.1.4 2.2.4 2.4-.6.3-1.1.4-1.6.9-.9.8-1.4 2.2-.7 3.3.4.8 1.1 1.2 1.9 1.6.1 0 .1.1.2.1-.4-.4-.8-.9-1-1.3-.4-.6-.3-1.5.2-2 .4-.4 1.4-.6 1.4-.6l.8 5.1c0-.1-1.5.1-2.7-.3zm1.6-15.5c.1-.4.3-.7.5-1 .2-.5.9-1 1.4-.9.3.1.6.5.7.8.1.3-.1 1.1-.1 1.1-.1.3-.7 1.4-1.3 2.1-.3.3-1.2 1.2-1.4 1.3-.1-2.5.2-3.3.2-3.4zm1.9 16.3s.6-.3.7-.4c.3-.2.6-.4.8-.7 1.6-1.6 2-4.5 0-6-.8-.6-1.7-.7-2.7-.7 0-.4-.1-.8-.2-1.2 0-.3-.1-.6-.1-.8-.1-.3-.1-.5.1-.7 1.4-1.4 2.8-3.2 3-5.2 0-.3.2-2.3-.5-3.6-.6-1-2.1-1.3-3.1.2-.8 1.2-1 2.9-1 4.3 0 .8.1 1.5.3 2.3 0 .1-.6.4-.6.5-.3.2-.6.4-.9.7-.6.5-1.2 1-1.7 1.5-1 1.1-1.7 2.3-1.8 3.8-.2 2.8 1.6 5.3 4.3 6 .9.2 2.7.1 2.7.1s.2 1.4.3 1.5c.1.6.3 1.1.3 1.7 0 1.1-.4 2-1.4 2.5-.8.4-1.8.3-2.4-.4.1.2.9-.3 1-.4.3-.3.5-.6.5-1 .1-.6-.2-1.4-.7-1.7-.5-.3-1.1-.2-1.5 0-.7.4-1.1 1.1-.9 1.9.1.6.4 1.3 1 1.7.4.3.8.5 1.3.6 1.1.3 2.3 0 3.1-.7.421-.316.698-.955.764-1.473.168-1.303-.563-3.57-.664-4.327zm21.9-7.3H36v-1h-4.1c.3.3.6.6.7 1zm-5.322-.76a.658.658 0 0 0-.325.219c-.027.034-.18.44-.153.44h1.6c-.1 0-.2-.2-.3-.3-.166-.164-.347-.35-.594-.352-.07 0-.16-.03-.228-.007zm4.122 4.76H36v-1h-3.6c-.3.4-.6.7-1 1zm-2.9-.7h.2c.1 0 .2-.2.2-.2H28c.1.1.3.2.5.2zm-6.6-3.9c.1.2.1.4.1.6h1.2c.2-.4.4-.7.7-1h-2.2c0 .1.1.3.2.4zm-2.7 4.6h5.2c-.4-.3-.7-.6-.9-1h-3.2l-1.1 1zm-6.5-13c0 .3 0 .8-.1 1H36v-1H12.7zm-2.8 8c.5 0 1 .1 1.5.3.5.2.9.4 1.3.7h4v-1H9.9zm-1.7.1H7l-.9 1h1.1l1-1zm3.3-4.1c-.2.4-.5.7-.7 1h5.9v-1h-5.2zm2.6 9h2.6v-1h-2.5l-.1 1zm-2.7-1h-.9l.2 1h1l-.3-1zm-3.6 0v1H9l-.2-1h-1zm-2.1 0h-.8c0 .3.1 1 .1 1h.9l-.2-1zm5.6 4.7v.3H36v-1H12.2c0 .1-.6.6-.9.7zm-.5-16.7H9.3l-.2 1h1.1s.5-.7.6-1zm-5.8 16H1v-3h1.9c-.1-.3-.2-.6-.3-1H1v-3h1.8c.1-.3.2-.8.4-1H1v-3h4.7c.2-.3.4-.4.6-.6l.5-.4h.1H1v-3h6.2c0-.4 0-.7.1-1H0v17h7.2c-.4-.1-1.6-.5-2.2-1zm13.4-11H36v-1H18.4v1z">
                                                 </path>
                                             </g>
-                                        </svg> -->
+                                        </svg>
                                         <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/bilibili.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">B站</span></a></li>
-                               
-                                        <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.douyin.com/"  target="_blank"
-                                        class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
-                                        <!-- <svg
-                                            class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                            <defs>
-                                                <path id="a" d="M0 0h25.495v25.793H0z"></path>
-                                            </defs>
-                                            <g fill="none" fill-rule="evenodd">
-                                                <path d="M0 0h48v48H0z"></path>
-                                                <g transform="translate(11 11)">
-                                                    <path class="mainColor" fill="#00ADB8"
-                                                        d="M8.39 13.854l.002.008c.004.17.008.338.035.51 0 .077.017.16.033.24.004.103.076.387.097.444 0 .04.014.067.02.097a4.646 4.646 0 0 0 .642 1.36l.002.008c.106.155.218.295.343.432.106.118.213.235.333.342.063.057.121.115.183.164.099.081.197.154.301.225.098.073.201.137.312.2.469.276.982.466 1.527.55.126.028.258.048.387.053a4.445 4.445 0 0 0 2.476-.537c.109-.06.215-.128.313-.202.101-.059.2-.133.295-.22a4.11 4.11 0 0 0 1.001-1.129c.07-.099.131-.212.192-.317.053-.11.106-.222.157-.34.251-.59.382-1.25.359-1.925a2.812 2.812 0 0 0-.023-.374 3.296 3.296 0 0 0-.053-.383l-.013-.059a4.73 4.73 0 0 0-.568-1.476 4.734 4.734 0 0 0-.207-.314c-.073-.1-.145-.202-.233-.3a4.554 4.554 0 0 0-1.619-1.234 3.925 3.925 0 0 0-.625-.22 1.561 1.561 0 0 0-.247-.067 3.87 3.87 0 0 0-.789-.104l-.204-.005c-.12.001-.24.01-.366.02-.117.015-.243.025-.365.057a.483.483 0 0 0-.167.034c-.223.045-.43.102-.632.19l-.006.001c-.394.14-.76.345-1.078.602a1.6 1.6 0 0 0-.309.255c-.117.093-.224.2-.32.32a3.897 3.897 0 0 0-.578.802 2.663 2.663 0 0 0-.182.362c-.059.12-.11.245-.153.37-.062.175-.119.34-.157.526l.001.007a3.19 3.19 0 0 0-.079.464 4.59 4.59 0 0 0-.038.563m3.98 5.368a5.172 5.172 0 0 1-2.335-.866 9.965 9.965 0 0 1-.631-.514 2.052 2.052 0 0 1-.302-.302c-.432-.46-.781-1-1.03-1.599-.047-.122-.092-.236-.132-.359l-.002-.008a2.534 2.534 0 0 1-.109-.387.513.513 0 0 1-.026-.095 4.36 4.36 0 0 0-2.717.987c-.136.104-.27.224-.389.348-.105.114-.203.226-.301.34-.92 1.157-1.21 2.712-.82 4.155.037.147.088.291.138.428.052.144.117.285.19.417 1.181 2.38 4.235 3.285 6.425 1.834.109-.06.207-.135.296-.214.1-.067.197-.148.285-.235 1.058-.954 1.632-2.405 1.46-3.93m-8.756-2.639a5.292 5.292 0 0 1-2.893-2.282c-1.166 2.265-.229 5.17 2.03 6.308a5.38 5.38 0 0 1 .863-4.026m1.547-10.47a.059.059 0 0 0 .037 0c.023.003.038 0 .061.003.082 0 .166.005.25.011l.092.005c.162.021.325.043.489.072.221.048.436.105.646.178.274.092.538.201.792.343.271.146.539.316.782.514.232.185.451.372.64.597.006-.002.008.006.008.006.057.058.107.117.163.176.032.04.062.08.094.127.009.006.012.021.021.027.293.373.537.795.726 1.251a4.709 4.709 0 0 1 1.324-.645h.007c.212-.079.481-.163.711-.175.123-.024.24-.04.366-.05.125-.018.246-.019.374-.02.208-.012.414 0 .614.022a4.651 4.651 0 0 0 .177-2.49 1.7 1.7 0 0 0-.045-.185 2.561 2.561 0 0 0-.136-.45 2.838 2.838 0 0 0-.166-.415c-.739-1.612-2.337-2.664-4.085-2.668a3.804 3.804 0 0 0-.851.08l-.036.006c-.116.023-.23.054-.345.085-.171.05-.34.11-.505.18a1.53 1.53 0 0 0-.262.121c-.09.041-.171.088-.252.136a3.98 3.98 0 0 0-.695.51c-.072.06-.14.128-.209.197-.063.066-.132.134-.193.208a6.099 6.099 0 0 0-.488.677.028.028 0 0 1-.004.016l-.008.002c-.015.034-.039.07-.054.103a.889.889 0 0 0-.076.147c-.01.025-.021.043-.032.068a4.467 4.467 0 0 0-.396 1.246c.118-.008.23-.016.342-.015h.122m8.889-.933c.43 1.095.416 2.4.049 3.502.205.044.399.113.596.19.163.06.32.128.472.213.14.057.269.14.399.221.513.306.97.708 1.359 1.177.08.1.153.202.221.311.079.093.144.195.205.307.326.526.681 1.254.704 1.888 1.205.005 2.475-1.146 3.043-2.133.069-.107.129-.219.183-.33a4.586 4.586 0 0 0 .377-2.956c-.367-1.818-1.733-3.179-3.382-3.588a2.135 2.135 0 0 0-.385-.077 2.005 2.005 0 0 0-.378-.048c-1.275-.103-2.569.401-3.463 1.323m-.313-.732a5.077 5.077 0 0 1 3.585-1.355c-1.13-3.346-5.54-4.193-7.734-1.478 1.745.174 3.309 1.241 4.149 2.833M3.444 7.13l.059.034C1.304 8.011.158 10.53.846 12.825c.043.138.093.275.15.41.047.121.111.248.172.367a4.535 4.535 0 0 0 2.958 2.346c.912-.97 2.227-1.595 3.557-1.604a4.61 4.61 0 0 1 .032-1.265c.015-.149.04-.286.08-.425l-.002-.008c.026-.136.209-.72.261-.839.044-.117.096-.236.155-.348a5.243 5.243 0 0 1 1.143-1.55 4.891 4.891 0 0 0-.177-.428 4.82 4.82 0 0 0-.216-.397 2.92 2.92 0 0 0-.248-.374 2.092 2.092 0 0 0-.229-.278.27.27 0 0 0-.05-.059l-.001-.008a.12.12 0 0 0-.04-.046c-.001-.007-.009-.006-.01-.013l-.197-.192a4.366 4.366 0 0 0-.347-.3L7.82 7.8a2.162 2.162 0 0 0-.167-.12c-.011-.014-.02-.02-.036-.032-.043-.023-.08-.054-.122-.076a3.628 3.628 0 0 0-.671-.344c-.044-.029-.092-.043-.141-.064-.009-.006-.017-.004-.025-.01a4.033 4.033 0 0 0-.869-.235.056.056 0 0 0-.032-.009l-.146-.016-.007.001a1.323 1.323 0 0 0-.193-.023c-.091-.005-.19-.008-.289-.012-.051.003-.105-.002-.158.001-.111.008-.222.014-.34.03-.127.01-.251.027-.374.052l-.021.005a5.064 5.064 0 0 0-.338.083 2.172 2.172 0 0 1 .005-.387 3.92 3.92 0 0 1 .033-.4.353.353 0 0 1 .021-.12c.016-.104.029-.19.054-.289l-.001-.007c.056-.282.136-.56.241-.829-1.163-.646-2.039-1.365-2.287-1.663a1.093 1.093 0 0 0-1.56-.156c-.471.395-.53 1.11-.139 1.594.542.671 1.851 1.636 3.186 2.355M18.99 20.105a3.5 3.5 0 0 0-.047-.384c-.007-.068-.022-.142-.035-.209a4.634 4.634 0 0 0-.817-1.85l-.008.001a4.195 4.195 0 0 0-.769-.833 5.144 5.144 0 0 1-1.184 1.311 2.786 2.786 0 0 1-.294.221 2.962 2.962 0 0 1-.328.205 4.817 4.817 0 0 1-2.393.683 5.345 5.345 0 0 1-1.715 4.467c1.647 1.605 4.26 1.701 5.999.237a4.632 4.632 0 0 0 1.6-3.465 3.766 3.766 0 0 0-.009-.384m-.851-6.36a5.27 5.27 0 0 1-.478 2.42c.394.307.744.661 1.029 1.067.535.72.923 1.63.999 2.532 1.575-.023 3.045-.954 3.798-2.355a4.672 4.672 0 0 0 .461-3.135 4.654 4.654 0 0 0-2.174-3.09c-.716 1.272-2.147 2.455-3.635 2.561m7.261 6.583a4.685 4.685 0 0 0-1.328-2.442c-.884 1.555-2.557 2.612-4.336 2.633a5.358 5.358 0 0 1-1.855 4.001c3.128 3.084 8.387.124 7.519-4.192">
-                                                    </path>
-                                                </g>
-                                            </g>
-                                        </svg> -->
-                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/抖音.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">抖音</span></a></li>
-                                        
-                                        <!-- <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.reddit.com/"  target="_blank"
-                                        class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg"> -->
-                                        <!-- <svg
-                                            class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                            <defs>
-                                                <path id="a" d="M0 0h25.495v25.793H0z"></path>
-                                            </defs>
-                                            <g fill="none" fill-rule="evenodd">
-                                                <path d="M0 0h48v48H0z"></path>
-                                                <g transform="translate(11 11)">
-                                                    <path class="mainColor" fill="#00ADB8"
-                                                        d="M8.39 13.854l.002.008c.004.17.008.338.035.51 0 .077.017.16.033.24.004.103.076.387.097.444 0 .04.014.067.02.097a4.646 4.646 0 0 0 .642 1.36l.002.008c.106.155.218.295.343.432.106.118.213.235.333.342.063.057.121.115.183.164.099.081.197.154.301.225.098.073.201.137.312.2.469.276.982.466 1.527.55.126.028.258.048.387.053a4.445 4.445 0 0 0 2.476-.537c.109-.06.215-.128.313-.202.101-.059.2-.133.295-.22a4.11 4.11 0 0 0 1.001-1.129c.07-.099.131-.212.192-.317.053-.11.106-.222.157-.34.251-.59.382-1.25.359-1.925a2.812 2.812 0 0 0-.023-.374 3.296 3.296 0 0 0-.053-.383l-.013-.059a4.73 4.73 0 0 0-.568-1.476 4.734 4.734 0 0 0-.207-.314c-.073-.1-.145-.202-.233-.3a4.554 4.554 0 0 0-1.619-1.234 3.925 3.925 0 0 0-.625-.22 1.561 1.561 0 0 0-.247-.067 3.87 3.87 0 0 0-.789-.104l-.204-.005c-.12.001-.24.01-.366.02-.117.015-.243.025-.365.057a.483.483 0 0 0-.167.034c-.223.045-.43.102-.632.19l-.006.001c-.394.14-.76.345-1.078.602a1.6 1.6 0 0 0-.309.255c-.117.093-.224.2-.32.32a3.897 3.897 0 0 0-.578.802 2.663 2.663 0 0 0-.182.362c-.059.12-.11.245-.153.37-.062.175-.119.34-.157.526l.001.007a3.19 3.19 0 0 0-.079.464 4.59 4.59 0 0 0-.038.563m3.98 5.368a5.172 5.172 0 0 1-2.335-.866 9.965 9.965 0 0 1-.631-.514 2.052 2.052 0 0 1-.302-.302c-.432-.46-.781-1-1.03-1.599-.047-.122-.092-.236-.132-.359l-.002-.008a2.534 2.534 0 0 1-.109-.387.513.513 0 0 1-.026-.095 4.36 4.36 0 0 0-2.717.987c-.136.104-.27.224-.389.348-.105.114-.203.226-.301.34-.92 1.157-1.21 2.712-.82 4.155.037.147.088.291.138.428.052.144.117.285.19.417 1.181 2.38 4.235 3.285 6.425 1.834.109-.06.207-.135.296-.214.1-.067.197-.148.285-.235 1.058-.954 1.632-2.405 1.46-3.93m-8.756-2.639a5.292 5.292 0 0 1-2.893-2.282c-1.166 2.265-.229 5.17 2.03 6.308a5.38 5.38 0 0 1 .863-4.026m1.547-10.47a.059.059 0 0 0 .037 0c.023.003.038 0 .061.003.082 0 .166.005.25.011l.092.005c.162.021.325.043.489.072.221.048.436.105.646.178.274.092.538.201.792.343.271.146.539.316.782.514.232.185.451.372.64.597.006-.002.008.006.008.006.057.058.107.117.163.176.032.04.062.08.094.127.009.006.012.021.021.027.293.373.537.795.726 1.251a4.709 4.709 0 0 1 1.324-.645h.007c.212-.079.481-.163.711-.175.123-.024.24-.04.366-.05.125-.018.246-.019.374-.02.208-.012.414 0 .614.022a4.651 4.651 0 0 0 .177-2.49 1.7 1.7 0 0 0-.045-.185 2.561 2.561 0 0 0-.136-.45 2.838 2.838 0 0 0-.166-.415c-.739-1.612-2.337-2.664-4.085-2.668a3.804 3.804 0 0 0-.851.08l-.036.006c-.116.023-.23.054-.345.085-.171.05-.34.11-.505.18a1.53 1.53 0 0 0-.262.121c-.09.041-.171.088-.252.136a3.98 3.98 0 0 0-.695.51c-.072.06-.14.128-.209.197-.063.066-.132.134-.193.208a6.099 6.099 0 0 0-.488.677.028.028 0 0 1-.004.016l-.008.002c-.015.034-.039.07-.054.103a.889.889 0 0 0-.076.147c-.01.025-.021.043-.032.068a4.467 4.467 0 0 0-.396 1.246c.118-.008.23-.016.342-.015h.122m8.889-.933c.43 1.095.416 2.4.049 3.502.205.044.399.113.596.19.163.06.32.128.472.213.14.057.269.14.399.221.513.306.97.708 1.359 1.177.08.1.153.202.221.311.079.093.144.195.205.307.326.526.681 1.254.704 1.888 1.205.005 2.475-1.146 3.043-2.133.069-.107.129-.219.183-.33a4.586 4.586 0 0 0 .377-2.956c-.367-1.818-1.733-3.179-3.382-3.588a2.135 2.135 0 0 0-.385-.077 2.005 2.005 0 0 0-.378-.048c-1.275-.103-2.569.401-3.463 1.323m-.313-.732a5.077 5.077 0 0 1 3.585-1.355c-1.13-3.346-5.54-4.193-7.734-1.478 1.745.174 3.309 1.241 4.149 2.833M3.444 7.13l.059.034C1.304 8.011.158 10.53.846 12.825c.043.138.093.275.15.41.047.121.111.248.172.367a4.535 4.535 0 0 0 2.958 2.346c.912-.97 2.227-1.595 3.557-1.604a4.61 4.61 0 0 1 .032-1.265c.015-.149.04-.286.08-.425l-.002-.008c.026-.136.209-.72.261-.839.044-.117.096-.236.155-.348a5.243 5.243 0 0 1 1.143-1.55 4.891 4.891 0 0 0-.177-.428 4.82 4.82 0 0 0-.216-.397 2.92 2.92 0 0 0-.248-.374 2.092 2.092 0 0 0-.229-.278.27.27 0 0 0-.05-.059l-.001-.008a.12.12 0 0 0-.04-.046c-.001-.007-.009-.006-.01-.013l-.197-.192a4.366 4.366 0 0 0-.347-.3L7.82 7.8a2.162 2.162 0 0 0-.167-.12c-.011-.014-.02-.02-.036-.032-.043-.023-.08-.054-.122-.076a3.628 3.628 0 0 0-.671-.344c-.044-.029-.092-.043-.141-.064-.009-.006-.017-.004-.025-.01a4.033 4.033 0 0 0-.869-.235.056.056 0 0 0-.032-.009l-.146-.016-.007.001a1.323 1.323 0 0 0-.193-.023c-.091-.005-.19-.008-.289-.012-.051.003-.105-.002-.158.001-.111.008-.222.014-.34.03-.127.01-.251.027-.374.052l-.021.005a5.064 5.064 0 0 0-.338.083 2.172 2.172 0 0 1 .005-.387 3.92 3.92 0 0 1 .033-.4.353.353 0 0 1 .021-.12c.016-.104.029-.19.054-.289l-.001-.007c.056-.282.136-.56.241-.829-1.163-.646-2.039-1.365-2.287-1.663a1.093 1.093 0 0 0-1.56-.156c-.471.395-.53 1.11-.139 1.594.542.671 1.851 1.636 3.186 2.355M18.99 20.105a3.5 3.5 0 0 0-.047-.384c-.007-.068-.022-.142-.035-.209a4.634 4.634 0 0 0-.817-1.85l-.008.001a4.195 4.195 0 0 0-.769-.833 5.144 5.144 0 0 1-1.184 1.311 2.786 2.786 0 0 1-.294.221 2.962 2.962 0 0 1-.328.205 4.817 4.817 0 0 1-2.393.683 5.345 5.345 0 0 1-1.715 4.467c1.647 1.605 4.26 1.701 5.999.237a4.632 4.632 0 0 0 1.6-3.465 3.766 3.766 0 0 0-.009-.384m-.851-6.36a5.27 5.27 0 0 1-.478 2.42c.394.307.744.661 1.029 1.067.535.72.923 1.63.999 2.532 1.575-.023 3.045-.954 3.798-2.355a4.672 4.672 0 0 0 .461-3.135 4.654 4.654 0 0 0-2.174-3.09c-.716 1.272-2.147 2.455-3.635 2.561m7.261 6.583a4.685 4.685 0 0 0-1.328-2.442c-.884 1.555-2.557 2.612-4.336 2.633a5.358 5.358 0 0 1-1.855 4.001c3.128 3.084 8.387.124 7.519-4.192">
-                                                    </path>
-                                                </g>
-                                            </g>
-                                        </svg> -->
-                                        <!-- <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/reddit.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;" >reddit</span></a></li> -->
+                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">B站</span></a></li> -->
 
-
-                                        <li class="sc-8081b5c5-0 lmlYtl"><a href="https://music.163.com/"  target="_blank"
-                                        class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
-                                        <!-- <svg
-                                            class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                            <defs>
-                                                <path id="a" d="M0 0h25.495v25.793H0z"></path>
-                                            </defs>
-                                            <g fill="none" fill-rule="evenodd">
-                                                <path d="M0 0h48v48H0z"></path>
-                                                <g transform="translate(11 11)">
-                                                    <path class="mainColor" fill="#00ADB8"
-                                                        d="M8.39 13.854l.002.008c.004.17.008.338.035.51 0 .077.017.16.033.24.004.103.076.387.097.444 0 .04.014.067.02.097a4.646 4.646 0 0 0 .642 1.36l.002.008c.106.155.218.295.343.432.106.118.213.235.333.342.063.057.121.115.183.164.099.081.197.154.301.225.098.073.201.137.312.2.469.276.982.466 1.527.55.126.028.258.048.387.053a4.445 4.445 0 0 0 2.476-.537c.109-.06.215-.128.313-.202.101-.059.2-.133.295-.22a4.11 4.11 0 0 0 1.001-1.129c.07-.099.131-.212.192-.317.053-.11.106-.222.157-.34.251-.59.382-1.25.359-1.925a2.812 2.812 0 0 0-.023-.374 3.296 3.296 0 0 0-.053-.383l-.013-.059a4.73 4.73 0 0 0-.568-1.476 4.734 4.734 0 0 0-.207-.314c-.073-.1-.145-.202-.233-.3a4.554 4.554 0 0 0-1.619-1.234 3.925 3.925 0 0 0-.625-.22 1.561 1.561 0 0 0-.247-.067 3.87 3.87 0 0 0-.789-.104l-.204-.005c-.12.001-.24.01-.366.02-.117.015-.243.025-.365.057a.483.483 0 0 0-.167.034c-.223.045-.43.102-.632.19l-.006.001c-.394.14-.76.345-1.078.602a1.6 1.6 0 0 0-.309.255c-.117.093-.224.2-.32.32a3.897 3.897 0 0 0-.578.802 2.663 2.663 0 0 0-.182.362c-.059.12-.11.245-.153.37-.062.175-.119.34-.157.526l.001.007a3.19 3.19 0 0 0-.079.464 4.59 4.59 0 0 0-.038.563m3.98 5.368a5.172 5.172 0 0 1-2.335-.866 9.965 9.965 0 0 1-.631-.514 2.052 2.052 0 0 1-.302-.302c-.432-.46-.781-1-1.03-1.599-.047-.122-.092-.236-.132-.359l-.002-.008a2.534 2.534 0 0 1-.109-.387.513.513 0 0 1-.026-.095 4.36 4.36 0 0 0-2.717.987c-.136.104-.27.224-.389.348-.105.114-.203.226-.301.34-.92 1.157-1.21 2.712-.82 4.155.037.147.088.291.138.428.052.144.117.285.19.417 1.181 2.38 4.235 3.285 6.425 1.834.109-.06.207-.135.296-.214.1-.067.197-.148.285-.235 1.058-.954 1.632-2.405 1.46-3.93m-8.756-2.639a5.292 5.292 0 0 1-2.893-2.282c-1.166 2.265-.229 5.17 2.03 6.308a5.38 5.38 0 0 1 .863-4.026m1.547-10.47a.059.059 0 0 0 .037 0c.023.003.038 0 .061.003.082 0 .166.005.25.011l.092.005c.162.021.325.043.489.072.221.048.436.105.646.178.274.092.538.201.792.343.271.146.539.316.782.514.232.185.451.372.64.597.006-.002.008.006.008.006.057.058.107.117.163.176.032.04.062.08.094.127.009.006.012.021.021.027.293.373.537.795.726 1.251a4.709 4.709 0 0 1 1.324-.645h.007c.212-.079.481-.163.711-.175.123-.024.24-.04.366-.05.125-.018.246-.019.374-.02.208-.012.414 0 .614.022a4.651 4.651 0 0 0 .177-2.49 1.7 1.7 0 0 0-.045-.185 2.561 2.561 0 0 0-.136-.45 2.838 2.838 0 0 0-.166-.415c-.739-1.612-2.337-2.664-4.085-2.668a3.804 3.804 0 0 0-.851.08l-.036.006c-.116.023-.23.054-.345.085-.171.05-.34.11-.505.18a1.53 1.53 0 0 0-.262.121c-.09.041-.171.088-.252.136a3.98 3.98 0 0 0-.695.51c-.072.06-.14.128-.209.197-.063.066-.132.134-.193.208a6.099 6.099 0 0 0-.488.677.028.028 0 0 1-.004.016l-.008.002c-.015.034-.039.07-.054.103a.889.889 0 0 0-.076.147c-.01.025-.021.043-.032.068a4.467 4.467 0 0 0-.396 1.246c.118-.008.23-.016.342-.015h.122m8.889-.933c.43 1.095.416 2.4.049 3.502.205.044.399.113.596.19.163.06.32.128.472.213.14.057.269.14.399.221.513.306.97.708 1.359 1.177.08.1.153.202.221.311.079.093.144.195.205.307.326.526.681 1.254.704 1.888 1.205.005 2.475-1.146 3.043-2.133.069-.107.129-.219.183-.33a4.586 4.586 0 0 0 .377-2.956c-.367-1.818-1.733-3.179-3.382-3.588a2.135 2.135 0 0 0-.385-.077 2.005 2.005 0 0 0-.378-.048c-1.275-.103-2.569.401-3.463 1.323m-.313-.732a5.077 5.077 0 0 1 3.585-1.355c-1.13-3.346-5.54-4.193-7.734-1.478 1.745.174 3.309 1.241 4.149 2.833M3.444 7.13l.059.034C1.304 8.011.158 10.53.846 12.825c.043.138.093.275.15.41.047.121.111.248.172.367a4.535 4.535 0 0 0 2.958 2.346c.912-.97 2.227-1.595 3.557-1.604a4.61 4.61 0 0 1 .032-1.265c.015-.149.04-.286.08-.425l-.002-.008c.026-.136.209-.72.261-.839.044-.117.096-.236.155-.348a5.243 5.243 0 0 1 1.143-1.55 4.891 4.891 0 0 0-.177-.428 4.82 4.82 0 0 0-.216-.397 2.92 2.92 0 0 0-.248-.374 2.092 2.092 0 0 0-.229-.278.27.27 0 0 0-.05-.059l-.001-.008a.12.12 0 0 0-.04-.046c-.001-.007-.009-.006-.01-.013l-.197-.192a4.366 4.366 0 0 0-.347-.3L7.82 7.8a2.162 2.162 0 0 0-.167-.12c-.011-.014-.02-.02-.036-.032-.043-.023-.08-.054-.122-.076a3.628 3.628 0 0 0-.671-.344c-.044-.029-.092-.043-.141-.064-.009-.006-.017-.004-.025-.01a4.033 4.033 0 0 0-.869-.235.056.056 0 0 0-.032-.009l-.146-.016-.007.001a1.323 1.323 0 0 0-.193-.023c-.091-.005-.19-.008-.289-.012-.051.003-.105-.002-.158.001-.111.008-.222.014-.34.03-.127.01-.251.027-.374.052l-.021.005a5.064 5.064 0 0 0-.338.083 2.172 2.172 0 0 1 .005-.387 3.92 3.92 0 0 1 .033-.4.353.353 0 0 1 .021-.12c.016-.104.029-.19.054-.289l-.001-.007c.056-.282.136-.56.241-.829-1.163-.646-2.039-1.365-2.287-1.663a1.093 1.093 0 0 0-1.56-.156c-.471.395-.53 1.11-.139 1.594.542.671 1.851 1.636 3.186 2.355M18.99 20.105a3.5 3.5 0 0 0-.047-.384c-.007-.068-.022-.142-.035-.209a4.634 4.634 0 0 0-.817-1.85l-.008.001a4.195 4.195 0 0 0-.769-.833 5.144 5.144 0 0 1-1.184 1.311 2.786 2.786 0 0 1-.294.221 2.962 2.962 0 0 1-.328.205 4.817 4.817 0 0 1-2.393.683 5.345 5.345 0 0 1-1.715 4.467c1.647 1.605 4.26 1.701 5.999.237a4.632 4.632 0 0 0 1.6-3.465 3.766 3.766 0 0 0-.009-.384m-.851-6.36a5.27 5.27 0 0 1-.478 2.42c.394.307.744.661 1.029 1.067.535.72.923 1.63.999 2.532 1.575-.023 3.045-.954 3.798-2.355a4.672 4.672 0 0 0 .461-3.135 4.654 4.654 0 0 0-2.174-3.09c-.716 1.272-2.147 2.455-3.635 2.561m7.261 6.583a4.685 4.685 0 0 0-1.328-2.442c-.884 1.555-2.557 2.612-4.336 2.633a5.358 5.358 0 0 1-1.855 4.001c3.128 3.084 8.387.124 7.519-4.192">
-                                                    </path>
-                                                </g>
-                                            </g>
-                                        </svg> -->
-                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/网易云音乐.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;" >网易云音乐</span></a></li>
-                                        
-                                         <li class="sc-8081b5c5-0 lmlYtl"><a href="https://radio.garden/"  target="_blank"
-                                        class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
-                                        <!-- <svg
-                                            class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                            <defs>
-                                                <path id="a" d="M0 0h35.005v28H0z"></path>
-                                            </defs>
-                                            <g fill="none" fill-rule="evenodd">
-                                                <path d="M0 0h48v48H0z"></path>
-                                                <g transform="translate(6 10)">
-                                                    <path class="mainColor" fill="#00ADB8"
-                                                        d="M33.6 13.486a62.96 62.96 0 0 0-3.692.46c-1.522.24-3.295.563-5.157 1.109-.669.199-1.35.428-2.026.71.124.131.244.267.358.407 0 0 .028.041.063.104.584-.273 1.182-.51 1.774-.72 1.793-.626 3.537-1.038 5.036-1.353a64.161 64.161 0 0 1 3.653-.646c.887-.132 1.396-.189 1.396-.189s-.51.032-1.405.117m-1.21 12.78l-.024-.006-.35-.085c-.228-.06-.564-.136-.988-.25-.422-.12-.939-.252-1.52-.441a20.918 20.918 0 0 1-.926-.303 24.077 24.077 0 0 1-1.014-.363 31.263 31.263 0 0 1-2.238-.93 24.798 24.798 0 0 1-2.379-1.25c-.196-.12-.396-.244-.576-.369a11.438 11.438 0 0 1-.543-.42c-.36-.296-.7-.615-.99-.964a3.834 3.834 0 0 1-.475-.712c-.234.238-.472.485-.705.73.114.206.24.401.375.583a8.43 8.43 0 0 0 1.07 1.16c.193.178.374.33.587.505.211.162.415.3.62.44.82.546 1.64 1.014 2.434 1.427.796.41 1.563.773 2.283 1.076.358.157.705.297 1.037.427.331.134.647.25.947.358.596.223 1.125.387 1.558.532.435.139.781.233 1.015.305l.36.107.037.01a.83.83 0 0 0 1.004-.585.809.809 0 0 0-.599-.982m-15.038-2.73c-.043-.125 0 0 .01-.122l.005-.052a6.238 6.238 0 0 0 .007-.103s.045-.117.068-.168a.574.574 0 0 0 .028-.136l.081-.131s.105-.2.043-.308c-.06-.11-.078-.128-.078-.128-.188.014-.564-.06-.564-.06-.289-.044-.32.281-.32.281s-.145-.047-.242-.102c-.096-.055-.224-.526-.208-.634.005-.037.028-.06.048-.087.01.145.111.497.192.543a.657.657 0 0 0 .146.067s.108-.273.377-.232c0 0 .442.168.62.155.433-.562 3.587-3.919 4.027-4.08.466-.172.791-.588 1.06-.957.267-.368-.229-1.108-.229-1.108-1.33-1.635-3.09-2.623-4.106-3.098.046-.005.092-.007.137-.011.646.25 1.537.649 2.438 1.22a1.13 1.13 0 0 1 .092-.247c.035-.042.277-.564.575-1.186 1.74-.09 3.376-.134 4.834-.154a185.4 185.4 0 0 1 4.896.009l1.86.036-1.857-.105a186.89 186.89 0 0 0-4.898-.186 128.605 128.605 0 0 0-4.629-.024c.317-.652.66-1.329.888-1.67l-.005-.08a.04.04 0 0 1 .005-.024l.002-.005c.27-.543.515-1.102.71-1.673.094-.287.194-.569.281-.854.04-.143.08-.285.105-.43.02-.074.013-.144.026-.22.01-.075-.009-.144-.009-.224l.023-.008c.028.072.066.147.08.224.01.077.028.159.025.236.006.16-.01.315-.035.47-.032.152-.062.306-.11.452-.042.15-.103.293-.159.436a16.441 16.441 0 0 1-.825 1.634l-.003.1c.17.338.687 1.31 1.058 1.423.448.138.847-.418 1.08-1.094.198-.582.47-2.378.727-3.172h-.002c.101-.29.241-.66.284-.772.053-.147.226-.69.25-.857.02-.167.177-1.157.184-1.341.006-.185-.045-.29-.115-.287-.069.003-.114.243-.114.243l.047-.266s.041-.199.028-.344c-.015-.143-.146-.12-.19-.114-.043.005-.096.144-.096.144s.012-.176.02-.269c.008-.091-.11-.118-.198-.1-.087.02-.106.23-.106.23-.037-.071-.102-.103-.169-.014-.068.088-.1.37-.16.493-.063.122-.213.742-.213.742-.164.032-.276.271-.426.64-.154.37.161.496.057.96-.102.452-.214 1.04-.22 1.07.015-.409.04-1.3-.035-1.57-.094-.353-.146-.487-.329-.622-.159-.117-1.04-.542-1.306-.77l.045.016c-.125-.242-.182-.516.011-.84.398.068.751.075.983-.093.021-.409.098-.662.087-1.009.043-.095.216-.006.25-.118.013-.19-.16-.449-.24-.655.247-.043.006-.107.228-.288-.022-.288-.14-.512-.219-.762.741-.171.115-.632-.414-.91-.169-.087-.295-.22-.428-.274-.178-.075-.454-.114-.594-.141-.02-.005-.038-.067-.072-.069-.295-.026-.675.277-.873.113-.317.266-.713.411-.887.911-.15.431-.094.94-.232 1.453.148.196.184.646.165 1.027.107.11.121.067.274.19-.05.056-.093.123-.135.195a5.859 5.859 0 0 0-.852-.11c-.66-.023-.368-.701-2.276-.407-1.908.293-1.842.13-2.087.202-.244.071-1.425.89-2.129 2.055-.706 1.165-1.275 2.484-1.275 2.484s-.59.564-.657.753c-.07.19-.204.854.072.89.277.034.333.155.545.17.211.017.473.05.62.049.145-.003.385-.334.37-.478-.016-.143.094-.19.094-.19s.133-.155.095-.354c-.037-.197-.203-.6-.169-.688.034-.088.77-1.005 1.137-1.287.37-.284.906-1.022 1.124-1.418.218-.4.487-.276.75-.242.262.034 1.455.43 1.98.367 0 0-.115 1.178-.392 2.157-.278.977-.598 1.81-.71 2.06-.114.25-.332.662-.432.746a3.164 3.164 0 0 0-.274.264c-.043.048-.008-.053-.043.048-.035.101-.197.14-.223.307-.029.167.016.287-.033.387-.048.1.004.456-.05.633-.012.041-.073.194-.14.406-1.422.118-2.864.28-4.304.52-1.345.226-2.685.512-3.982.905-1.296.399-2.553.896-3.692 1.565-1.132.676-2.15 1.505-2.87 2.554a5.299 5.299 0 0 0-.952 3.431c.082 1.123.463 2.075.868 2.846.412.774.862 1.383 1.251 1.864.393.48.732.83.971 1.066.24.235.383.355.394.366a.84.84 0 0 0 1.164-.099.797.797 0 0 0-.1-1.137c.011.01-.108-.082-.323-.276a12.047 12.047 0 0 1-.893-.904 9.947 9.947 0 0 1-1.154-1.573c-.373-.64-.709-1.41-.809-2.268-.1-.856.078-1.794.627-2.66.54-.868 1.411-1.65 2.412-2.297 1.013-.647 2.18-1.164 3.407-1.59 1.23-.421 2.523-.75 3.832-1.018a51.467 51.467 0 0 1 3.993-.642c-.128.688-.132 1.548.473 2.117l.25.476s-1.016 2.007-1.392 3.38c0 0-.098.337-.414.521-.316.183-1.506 1.113-2.166 2.29 0 0-.334.303-.474.38 0 0-.142.239 0 1.35 0 0 .11-.088.225.05 0 0 1.698-1.21 2.407-1.777.71-.569 1.602-1.096 1.784-1.395.18-.288 1.018-1.038 1.427-1.315.218-.659.555-2.02 1.098-2.314 0 0-1.165-.431-2.03-.94.967.42 2.41.78 2.41.78-.639.349-1.197 2.035-1.408 2.451-.209.418-1.529 2.288-1.529 2.288-.264-.02-.75.305-.926.5-.173.195.096.802.096.802s-.277.36.221 1.42 1.43.94 1.752.947c.323.008.244-.448.158-.697-.086-.248-.22-1.004-.264-1.127m-5.53.436c-.142-1.113 0-1.351 0-1.351l.001-.006c.005-.018-.006-.081-.382-.11-.44-.035-.962-.136-1.053.005-.09.14-.354.56-.435 1.783-.082 1.223-.415 1.854-.308 2.277.107.423.27.817.756.716.486-.101.833-1.336.934-1.71.101-.373.508-.81.573-.96.065-.15.147-.3.147-.3l.031-.152-.04-.142c-.116-.139-.225-.05-.225-.05">
-                                                    </path>
-                                                </g>
-                                            </g>
-                                        </svg> -->
-                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/radio.garden.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">radio.garden</span></a></li>
-                               
-                               
-                                        <li class="sc-8081b5c5-0 lmlYtl"><a href="https://tv.garden/"  target="_blank"
-                                        class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
-                                        <!-- <svg
-                                            class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                            <defs>
-                                                <path id="a" d="M0 0h34.014v23.03H0z"></path>
-                                            </defs>
-                                            <g fill="none" fill-rule="evenodd">
-                                                <path d="M0 0h48v48H0z"></path>
-                                                <g transform="translate(7 12)">
-                                                    <path class="mainColor" fill="#00ADB8"
-                                                        d="M33.014 19.016a.997.997 0 0 1-.995 1h-26a1.005 1.005 0 0 1-1.006-1v-11l28.006-.001-.005 11.001zm-28-15c0-.202.12-.523.22-.685.178-.282.43-.315.78-.315h26c.548 0 1 .446 1 1v2h-28v-2zm27-2h-2l.005-.001c-.16-1.099-.902-2.151-2-2L15.013 2.016h-9c-.969 0-1.82.072-2 1l-2.145.799C.772 3.967-.14 4.916.02 6.015l2.27 15.048c.16 1.099.631 2.103 1.73 1.952l12.995-1.999h15c1.097 0 2-.891 2-2v-15c0-1.109-.903-2-2-2zM20.72 15.546v.36h-.25l.25-.384v.024zm.543-.882h-.588l-.852 1.347v.383h.897v.54h.543v-.54h.262v-.488h-.262v-1.242zm-2.116-3.34c.155 0 .23.088.23.268 0 .179-.079.29-.207.29-.061 0-.223 0-.282-.389.088-.111.178-.169.26-.169zm.023 1.046c.428 0 .748-.334.748-.778 0-.46-.268-.744-.703-.744a.583.583 0 0 0-.31.097c.047-.275.167-.414.357-.414.081 0 .188.054.237.121l.075.098.349-.393-.066-.068a.861.861 0 0 0-.617-.258c-.42 0-.91.32-.91 1.227 0 .82.434 1.112.84 1.112zm1.582-.5c-.145 0-.268-.06-.407-.2l-.084-.085-.285.407.055.06a.998.998 0 0 0 .767.318c.405 0 .817-.278.817-.812 0-.453-.29-.745-.738-.745a.641.641 0 0 0-.159.019l.023-.255h.784v-.512h-1.288l-.066 1.176.273.183.055-.035c.12-.078.169-.1.276-.1.174 0 .276.105.276.279 0 .186-.114.302-.299.302zm1.165 3.523l.07-.079c.117-.13.224-.196.326-.196.2 0 .229.16.229.256 0 .283-.352.646-.89 1.168l-.032.03v.362h1.578v-.522h-.602l-.091.001c.313-.342.59-.693.59-1.051 0-.445-.29-.732-.738-.732-.285 0-.495.098-.721.341l-.066.071.346.351zM8.495 11.308l.253-.4v.4h-.253zm.253 1.028h.54v-.541h.262v-.487h-.26v-1.243h-.6l-.843 1.347v.383h.9v.541zm3.05-.105l-.005.105h.575l.005-.096c.034-.767.1-1.194.57-1.782l.023-.027v-.366H11.4v.512h.87c-.313.5-.44.955-.471 1.654zm-.53 5.22h.457l.793-3.029h-.458l-.793 3.029zm2.6-6.374c-.103 0-.22-.033-.22-.279 0-.169.082-.279.207-.279.15 0 .245.132.284.392-.08.107-.175.166-.271.166zm-.104.793a.357.357 0 0 1-.253-.126l-.077-.089-.329.39.066.067a.835.835 0 0 0 .617.258c.432 0 .896-.325.896-1.239 0-.812-.451-1.1-.84-1.1-.42 0-.736.329-.736.767 0 .46.263.744.69.744a.625.625 0 0 0 .325-.101c-.045.285-.165.429-.358.429zm4.835 4.117c.122-.077.17-.099.276-.099.178 0 .276.099.276.278 0 .186-.114.303-.297.303-.148 0-.27-.06-.409-.201l-.084-.084-.288.408.06.061c.136.135.361.316.765.316.407 0 .817-.279.817-.813 0-.452-.29-.744-.738-.744a.636.636 0 0 0-.159.018l.023-.255h.782v-.511h-1.287l-.064 1.176.273.183.054-.036zm-2.99-4.91c-.1 0-.23-.03-.23-.279 0-.192.107-.279.207-.279.06 0 .237 0 .282.391-.078.106-.17.167-.258.167zm-.102.793a.364.364 0 0 1-.256-.126l-.074-.087-.343.386.066.069a.86.86 0 0 0 .617.258c.44 0 .909-.325.909-1.239 0-.812-.452-1.1-.84-1.1-.428 0-.738.322-.738.767 0 .467.26.744.692.744a.616.616 0 0 0 .32-.101c-.048.285-.167.429-.353.429zm6.638-1.15c.104-.106.209-.201.328-.201.15 0 .24.095.24.256 0 .287-.393.677-.89 1.17l-.032.03v.361h1.578v-.523h-.6l-.097.002c.331-.37.595-.703.595-1.051 0-.446-.294-.733-.75-.733-.335 0-.543.163-.718.34l-.07.071.346.349.07-.071zm-4.977.588l.254-.401c-.002.013-.002.028-.002.041v.36h-.253zm.253 1.028h.541v-.541h.262v-.487h-.262v-1.243h-.587l-.852 1.347v.383h.898v.541zm-7.192-1.028l.248-.384v.384h-.248zm.248 1.028h.543v-.541h.261v-.487h-.261v-1.243h-.588l-.854 1.347v.383h.9v.541zm4.653 3.076a.614.614 0 0 0-.15.016l.015-.253h.783v-.511H14.49l-.066 1.176.271.183.056-.036c.12-.077.18-.099.276-.099.178 0 .277.099.277.278 0 .186-.115.303-.3.303-.146 0-.268-.06-.407-.201l-.087-.086-.27.41.053.058c.197.212.454.319.768.319.407 0 .818-.279.818-.813 0-.452-.295-.744-.75-.744zm14.268-4.015c.245.103.372.166.372.298 0 .182-.15.21-.24.21-.157 0-.265-.1-.265-.244 0-.098.044-.187.133-.264zm.131-.901c.131 0 .207.077.207.209a.367.367 0 0 1-.096.237c-.192-.081-.284-.142-.284-.271 0-.111.063-.175.173-.175zm0 1.874c.454 0 .784-.279.784-.664 0-.23-.098-.41-.293-.548a.686.686 0 0 0 .213-.475c0-.391-.28-.652-.692-.652-.422 0-.715.262-.715.64 0 .18.075.347.215.489-.204.146-.306.329-.306.546 0 .385.335.664.794.664zm-16.073 4.043c.314-.342.59-.693.59-1.051 0-.445-.288-.732-.736-.732-.357 0-.566.172-.722.341l-.065.071.345.351.072-.079c.116-.13.224-.196.325-.196.2 0 .228.16.228.256 0 .283-.351.646-.89 1.168l-.03.03v.362h1.576v-.522h-.6l-.092.001zm-4.243.009h-.41v-1.758H8.4l-.024.015c-.107.069-.226.112-.436.159l-.077.018v.411h.375v1.155h-.455v.512h1.429v-.512zm1.157-.009c.313-.342.59-.693.59-1.051 0-.445-.29-.732-.738-.732-.285 0-.495.098-.72.341l-.067.071.348.351.07-.079c.116-.13.225-.196.325-.196.2 0 .23.16.23.256 0 .283-.353.646-.891 1.168l-.031.03v.362h1.577v-.522h-.602l-.091.001zm17.034-4.183l-.006.106h.576l.005-.096c.033-.785.122-1.206.58-1.782l.022-.027v-.366h-1.564v.512h.87c-.31.495-.44.95-.483 1.653zm-2.338-.406h-.4v-1.759h-.4l-.023.013a1.442 1.442 0 0 1-.45.162l-.078.018v.41h.377v1.156h-.456v.512h1.43v-.512zm1.026-.5c.102 0 .219.03.219.268 0 .173-.078.29-.195.29-.06 0-.24 0-.285-.39.079-.107.172-.168.26-.168zm.024 1.046c.425 0 .736-.327.736-.778 0-.46-.265-.744-.692-.744a.594.594 0 0 0-.319.102c.051-.279.17-.419.354-.419a.36.36 0 0 1 .255.127l.076.088.326-.388-.06-.065a.823.823 0 0 0-.62-.262c-.415 0-.896.32-.896 1.227 0 .82.433 1.112.84 1.112zm-1.922 3.176v.36h-.25l.25-.384v.024zm.54-.882h-.586l-.854 1.347v.383h.9v.54h.54v-.54h.262v-.488h-.261v-1.242z">
-                                                    </path>
-                                                </g>
-                                            </g>
-                                        </svg> -->
-                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/tv.garden.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">tv.garden</span></a></li>
-                                        <li class="sc-8081b5c5-0 lmlYtl"><a href="https://app.radiooooo.com/"  target="_blank"
-                                            class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
-                                            <!-- <svg
-                                                class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                                <path class="mainColor" fill="#00ADB8" fill-rule="evenodd"
-                                                    d="M31 17l3-4 3 4h-6zm-2 2h10v-8H29v8zm5 3l3 4h-6l3-4zm-5 6h10v-8H29v8zm-16.062 5.723h1.62v-.646h-1.62v.646zm2.615-1.501c0-.35.114-.63.342-.84.213-.196.48-.294.799-.294.32 0 .586.098.8.294.225.21.337.49.337.84v1.603c0 .349-.112.629-.337.839-.214.196-.48.294-.8.294-.319 0-.586-.098-.799-.294-.228-.21-.342-.49-.342-.839v-1.603zm2.925 2.705h.784v-.792h-.784v.792zm2.593-1.968c-.234 0-.385.103-.452.31h-.621V31.12h2.137v.625h-1.516v.818c.134-.128.321-.192.563-.192.298 0 .532.086.7.256.224.228.337.567.337 1.016 0 .232-.022.417-.064.556a1.046 1.046 0 0 1-.268.449c-.203.207-.479.31-.825.31-.359 0-.637-.102-.837-.304-.176-.179-.278-.443-.305-.792h.682c.038.314.189.471.456.471a.437.437 0 0 0 .325-.123c.097-.1.146-.289.146-.567 0-.456-.152-.684-.458-.684zm1.568.77l1.284-2.609h.747l-1.283 2.609h.783v-.711h.657v.711h.343v.657h-.343v.54h-.657v-.54h-1.531v-.657zM9 37h19v-8H9v8zm7.694-2.667a.415.415 0 0 0 .326-.139.55.55 0 0 0 .122-.375v-1.587a.553.553 0 0 0-.122-.379.416.416 0 0 0-.326-.14.414.414 0 0 0-.327.142.55.55 0 0 0-.125.377v1.587a.54.54 0 0 0 .125.375.418.418 0 0 0 .327.139zm-.883-11.558l.757-.673h.69v3.806h-.69V22.85l-.757.673v-.748zm2.667 3.133h.784v-.792h-.784v.792zm2.927-1.506a.52.52 0 0 0-.385-.141h-.101v-.604h.1c.312 0 .468-.158.468-.475a.48.48 0 0 0-.131-.359.448.448 0 0 0-.325-.128c-.13 0-.237.04-.322.122a.484.484 0 0 0-.14.337h-.681c.007-.331.119-.595.337-.791.217-.196.487-.294.81-.294.333 0 .607.102.82.305.214.203.322.465.322.786 0 .363-.144.623-.432.78.322.175.484.463.484.867 0 .363-.118.646-.352.85-.218.189-.497.282-.837.282-.333 0-.606-.087-.821-.261-.245-.2-.369-.487-.373-.861h.684a.476.476 0 0 0 .51.497c.15 0 .272-.046.365-.139.093-.092.14-.222.14-.39a.525.525 0 0 0-.14-.383zm1.234.308l1.284-2.608h.747l-1.283 2.608h.783v-.711h.657v.711h.343v.658h-.343v.54h-.657v-.54h-1.531v-.658zM9 28h19v-8H9v8zm12.048-11.726a.512.512 0 0 0 .514-.523.518.518 0 0 0-.15-.374.485.485 0 0 0-.364-.155.481.481 0 0 0-.363.155.514.514 0 0 0-.15.374c0 .146.049.27.15.372.099.101.22.151.363.151zm.005-1.656a.437.437 0 0 0 .33-.137.476.476 0 0 0 .131-.345.482.482 0 0 0-.131-.342.436.436 0 0 0-.33-.139.446.446 0 0 0-.332.139.476.476 0 0 0-.133.342c0 .14.044.255.133.345.09.091.2.137.332.137zm-5.626 1.053l1.283-2.609h.747l-1.283 2.609h.783v-.712h.658v.712h.342v.657h-.342v.54h-.658v-.54h-1.53v-.657zm3.051 1.198h.784v-.792h-.784v.792zm1.42-2.754c0-.328.114-.593.342-.796.218-.193.488-.289.811-.289.322 0 .593.096.809.289.225.203.337.468.337.796s-.14.592-.421.791c.317.215.474.499.474.855 0 .357-.117.638-.353.845-.216.196-.5.294-.846.294-.348 0-.63-.098-.847-.294-.235-.207-.352-.488-.352-.845 0-.359.155-.644.467-.855-.28-.199-.421-.463-.421-.791zm4.364 1.248a.517.517 0 0 0-.386-.141h-.101v-.604h.1c.313 0 .469-.159.469-.476a.479.479 0 0 0-.131-.358.446.446 0 0 0-.325-.129.447.447 0 0 0-.323.123.483.483 0 0 0-.139.337h-.682c.008-.331.119-.595.337-.791.218-.196.487-.294.811-.294.333 0 .606.101.82.304.214.204.321.466.321.787 0 .363-.143.623-.431.78.322.174.484.463.484.866 0 .363-.118.647-.353.85-.217.189-.497.283-.837.283-.333 0-.606-.087-.82-.261-.246-.201-.37-.487-.374-.861h.685c.003.164.055.288.157.374a.506.506 0 0 0 .352.122.494.494 0 0 0 .366-.138c.093-.093.139-.222.139-.39a.523.523 0 0 0-.139-.383zM9 19h19v-8H9v8zm28 12l-3 4-3-4h6zm-8 6h10v-8H29v8z">
-                                                </path>
-                                            </svg> -->
-                                            <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/musical.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                            <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">radiooooo</span></a></li>
-                                
-                                
-                                        <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.youtube.com/"  target="_blank"
-                                        class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
-                                        <!-- <svg
-                                            class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                            <defs>
-                                                <path id="a" d="M0 0h27.485v31.39H0z"></path>
-                                            </defs>
-                                            <g fill="none" fill-rule="evenodd">
-                                                <path d="M0 0h48v48H0z"></path>
-                                                <g transform="translate(10 8)">
-                                                    <path class="mainColor" fill="#00ADB8"
-                                                        d="M3.338 3.917a11.16 11.16 0 0 1-.295-.063c.217-.786 2.033-.354 2.379-.265.16.067.303.15.412.257 0 0-1.975-.555-2.496.07m.394-1.956c.515 0 .549.839.549.839-.31-.105-1.1 0-1.1 0s.035-.84.55-.84m1.254 19.135c-.918-.84-1.63-3.593-1.448-3.593.022 0 .058.042.109.134.442.799 1.165 2.264 1.945 2.264a.65.65 0 0 0 .116-.01c.824-.158.412-.84.206-1.73-.063-.275-.04-.381.042-.381.182 0 .644.527 1.026.853a.87.87 0 0 0 .563.2c.506 0 .977-.423.533-1.25-.475-.885-.372-1.246.1-1.246.14 0 .316.034.518.094.1.03.184.043.256.043.563 0 .34-.836.158-1.302-.18-.452.066-1.1.534-1.1.074 0 .154.017.238.053.095.04.186.057.269.057.469 0 .743-.557.349-1.001-.423-.48-.073-.957.344-.957.04 0 .08.004.12.013a.441.441 0 0 0 .104.013c.38 0 .478-.543.05-1.22-.401-.634-.957-1.308-.631-1.308.05 0 .123.016.219.05a.85.85 0 0 0 .299.06c.457 0 .513-.511.165-.688-.412-.21-3.35-3.512-4.895-6.343-.65-1.187-1.405-1.746-2.066-1.996.053.346-.121.853-.72.878-.641.027-.833.909-.861 1.55l-.154.022c-.011-.593.13-1.648.812-1.677.824-.035.79-1.05.48-1.118C3.458.388 2.716.423 2.71.213c-.008-.21-.582-.35-.741 0-.16.35-.194.458-.538.404-.344-.054-.55.225-.446.469.102.245.103.42 0 .595-.081.135.265.402.307.594l-.028-.041c-.011.06-.02.123-.028.184-.813.075-1.351 1.29-1.213 1.16.137-.13 1.213 0 1.213 0 1.06.234.845-1.064.137-1.156l.015-.003c.913-.083 1.265 1.58 0 1.3 0 0-.204-.023-.454-.042-.082.19-.263.56-.533.835-.378.384-.207 1.537.584 1.468.79-.071.893-.344 1.305.002.412.347 1.443-.107 1.374-.527-.07-.42.172-.555.653-.627.344-.051.864-.084.89-.241.026.013.056.025.079.038.696.41-.183.447-.696.524-.513.078-.77.222-.696.669.073.447-1.026.932-1.466.562-.348-.292-.49-.171-.95-.07a295.65 295.65 0 0 1-.15 5.82c-.26 7.772 2.283 9.489 3.345 9.489.414 0 .603-.26.313-.525M26.303 8.18c1.004-2.715-.545-2.831-.82-2.831h-.04c-.096-1.555-.983-1.784-1.494-1.784-.213 0-.361.04-.361.04-.173-.151-.347-.217-.518-.217-1.011 0-1.921 2.317-2.127 2.975-.241.769-1.375 2.516-3.091 3.494-.467.266-1.156.363-1.911.363-1.485 0-3.228-.372-4.06-.573-.002.013-.002.025-.005.038a.844.844 0 0 1-.625.627c.097.142.196.29.29.439.37.584.46 1.175.243 1.58a.8.8 0 0 1-.717.428c-.07 0-.141-.008-.224-.026a.052.052 0 0 0-.03.009.261.261 0 0 0 .06.093c.319.358.405.83.229 1.235a1.026 1.026 0 0 1-.952.622c-.155 0-.31-.033-.462-.097-.027-.012-.04-.013-.04-.014-.052.029-.135.236-.072.398.289.735.315 1.289.078 1.645-.02.03-.046.054-.07.08 1.557 1.97 3.924 2.716 6.245 2.716 2.004 0 3.974-.554 5.355-1.35 3.64-2.096 2.92-3.984 2.92-3.984.584 1.049.343 1.398.343 1.398 3.608-1.677 2.19-4.158 2.19-4.158 2.088-1.573-.334-3.146-.334-3.146m-1.647 7.77l-.55.256c-.53.817-1.426 1.592-2.674 2.31-1.54.887-3.634 1.416-5.603 1.416-2.897 0-5.204-1.052-6.682-2.97a.957.957 0 0 1-.196.02 1.4 1.4 0 0 1-.397-.062 2.335 2.335 0 0 0-.247-.06c.033.102.094.255.213.475.383.716.217 1.207.084 1.435-.21.358-.606.572-1.06.572-.326 0-.638-.11-.878-.312.062.314.064.612-.1.884-.15.248-.407.409-.766.478a1.12 1.12 0 0 1-.21.019c-.227 0-.44-.067-.64-.184.119.2.245.369.372.485.278.254.374.586.26.888-.096.254-.318.429-.616.498 1.427 1.293 3.949 3.26 6.822 4.06v.002s-1.624 2.142-2.126 2.652c-.503.512-1.572.839-2.19.853-.618.013-.644.419-.296.459.348.039 1.584-.171 1.584-.171-.31.092-.683.485-.683.485-.154.379.412.472.618.236.207-.236 1.199-.774 1.199-.774 1.03-.42 1.417.328 1.778.21.36-.118.073-.402.073-.402-.592-.105-.97-.804-.97-.804.24-.872 1.938-2.528 1.942-2.531.93.168 1.887.199 2.848.035 0 0-.771 2.426-1.287 2.776-.515.349-.24-.035-1.477.419-1.236.455-.378.665-.378.665.756-.21 1.409-.175 1.409-.175-1.134 1.118-.412 1.328-.241 1.293.172-.035.516-.21.516-.21.068-.385.68-1.256 1.092-1.361.412-.105.704.052 1.504.383.633.26 1.079.419 1.079.419s.24-.175-.15-.7c-.39-.523-1.74-.488-2.048-.733-.31-.245 1.613-3.254 1.613-3.254h-.001l.158-.066c5.503-2.47 7.87-7.272 7.689-10.11a6.652 6.652 0 0 1-.387.196">
-                                                    </path>
-                                                </g>
-                                            </g>
-                                        </svg> -->
-                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/youtube.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">youtube</span></a></li>
-
-                                       <li class="sc-8081b5c5-0 lmlYtl"><a href="https://x.com/"  target="_blank"
-                                        class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
-                                        <!-- <svg
-                                            class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                            <g fill="#00ADB8" fill-rule="evenodd">
-                                                <path class="mainColor"
-                                                    d="M17.445 22c1.902 0 3.445-1.566 3.445-3.498 0-1.932-1.543-3.499-3.445-3.499S14 16.57 14 18.502C14 20.434 15.543 22 17.445 22m9.666 6.523c-3.442 5.371-10.28-6.082-17.11 1.565.036.017 0 3.912 0 3.912h28V20.698s-6.055.28-10.89 7.825">
-                                                </path>
-                                                <path
-                                                    d="M39 34h-1v1H10v-1H9V14h1v-1h28v1h1v20zm2-20v-3h-3v1H10v-1H7v3h1v20H7v3h3v-1h28v1h3v-3h-1V14h1z">
-                                                </path>
-                                            </g>
-                                        </svg> -->
-                                        <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/X.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                        <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">X.com</span></a></li>
-                                        <li class="sc-8081b5c5-0 lmlYtl"><a href="https://drivenlisten.com/globe/"  target="_blank"
-                                            class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
-                                            <!-- <svg
-                                                class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                                <g fill="#00ADB8" fill-rule="evenodd">
-                                                    <path class="mainColor"
-                                                        d="M17.445 22c1.902 0 3.445-1.566 3.445-3.498 0-1.932-1.543-3.499-3.445-3.499S14 16.57 14 18.502C14 20.434 15.543 22 17.445 22m9.666 6.523c-3.442 5.371-10.28-6.082-17.11 1.565.036.017 0 3.912 0 3.912h28V20.698s-6.055.28-10.89 7.825">
-                                                    </path>
-                                                    <path
-                                                        d="M39 34h-1v1H10v-1H9V14h1v-1h28v1h1v20zm2-20v-3h-3v1H10v-1H7v3h1v20H7v3h3v-1h28v1h3v-3h-1V14h1z">
-                                                    </path>
-                                                </g>
-                                            </svg> -->
-                                            <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/行车记录仪.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                            <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">drivenlisten</span></a></li>
-                                    
-                                        <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.earthcam.com/"  target="_blank"
-                                            class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
-                                            <!-- <svg
-                                                class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                                <g fill="#00ADB8" fill-rule="evenodd">
-                                                    <path class="mainColor"
-                                                        d="M17.445 22c1.902 0 3.445-1.566 3.445-3.498 0-1.932-1.543-3.499-3.445-3.499S14 16.57 14 18.502C14 20.434 15.543 22 17.445 22m9.666 6.523c-3.442 5.371-10.28-6.082-17.11 1.565.036.017 0 3.912 0 3.912h28V20.698s-6.055.28-10.89 7.825">
-                                                    </path>
-                                                    <path
-                                                        d="M39 34h-1v1H10v-1H9V14h1v-1h28v1h1v20zm2-20v-3h-3v1H10v-1H7v3h1v20H7v3h3v-1h28v1h3v-3h-1V14h1z">
-                                                    </path>
-                                                </g>
-                                            </svg> -->
-                                            <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/earthcam.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                            <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">Earthcam</span></a></li>
-
-                                        <li class="sc-8081b5c5-0 lmlYtl"><a href="https://www.google.com/streetview/"  target="_blank"
-                                            class="_3BQD blueBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 gmSdtm hYwcJg">
-                                            <!-- <svg
-                                                class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
-                                                <g fill="#00ADB8" fill-rule="evenodd">
-                                                    <path class="mainColor"
-                                                        d="M17.445 22c1.902 0 3.445-1.566 3.445-3.498 0-1.932-1.543-3.499-3.445-3.499S14 16.57 14 18.502C14 20.434 15.543 22 17.445 22m9.666 6.523c-3.442 5.371-10.28-6.082-17.11 1.565.036.017 0 3.912 0 3.912h28V20.698s-6.055.28-10.89 7.825">
-                                                    </path>
-                                                    <path
-                                                        d="M39 34h-1v1H10v-1H9V14h1v-1h28v1h1v20zm2-20v-3h-3v1H10v-1H7v3h1v20H7v3h3v-1h28v1h3v-3h-1V14h1z">
-                                                    </path>
-                                                </g>
-                                            </svg> -->
-                                            <img class="" viewBox="0 0 23 23" viewBox="0 0 48 48" src="img/谷歌地图.png" alt="search" width="30" height="30" style="margin-left: 8px;">
-                                            <span class="sc-c233f61b-0 zsCsP _YVy_" style="margin-left: 5px;">Google Streetview</span></a></li>
-
-                                <!-- <li class="sc-8081b5c5-0 lmlYtl"><a href="/examples/everyday-life"
+                                        <!-- <li class="sc-8081b5c5-0 lmlYtl"><a href="/examples/everyday-life"
                                         class="_3BQD blueColoredBorderHoverIcon paddingRight10 sc-c233f61b-2 sc-c233f61b-3 fQWbwW hYwcJg"><svg
                                             class="sc-c233f61b-1 iyibbm __Csy" viewBox="0 0 48 48">
                                             <g fill="none" fill-rule="evenodd">
@@ -4535,7 +4386,8 @@ function Ask_Search() {
                                 class="sc-c233f61b-0 zsCsP">金山翻译</span></a></li> -->
                 <!-- </ul> -->
             </footer>
-            <div class="sc-78826ae-0 ECfnZ"></div>
+
+            <!-- <div class="sc-78826ae-0 ECfnZ"></div> -->
         </div>
     </div>
     <!-- <script id="__NEXT_DATA__"
