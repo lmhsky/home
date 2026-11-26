@@ -108,7 +108,7 @@
     vertical-align: middle;
     touch-action: manipulation;
     cursor: pointer;
-    background-image: none;
+    /* background-image: none; */
     box-shadow: none;
     border: 1px solid transparent;
     white-space: nowrap;

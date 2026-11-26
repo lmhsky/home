@@ -2143,7 +2143,8 @@ img,video {
 }
 
 a,button,input,select,textarea {
-    outline-color: #00000055
+    /* outline-color: #00000055 */
+     outline-color: #f96932
 }
 
 body,html {
@@ -2283,11 +2284,13 @@ body,html {
 
 a:not(.custom-a),a:not(.custom-a):visited {
     color: #777;
+    /* color: #f96932; */
     text-decoration: underline
 }
 
 a:not(.custom-a):focus,a:not(.custom-a):hover {
     color: #333
+    /* color: #f96932; */
 }
 
 a.anna,a.anna:visited {
